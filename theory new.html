@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Theory Test | CM Computer Centre</title>
+
+<link rel="stylesheet" href="theory new.css">
+
+</head>
+
+<body>
+
+<!-- =========================================================
+     PAGE LOADER
+========================================================= -->
+
+<div class="page-loader" id="pageLoader">
+
+    <div class="loader-ring"></div>
+
+    <div class="loader-brand">
+        CM COMPUTER CENTRE
+    </div>
+
+    <span>Preparing Theory Examination...</span>
+
+</div>
+
+
+<!-- =========================================================
+     BACKGROUND
+========================================================= -->
+
+<div class="bg-grid"></div>
+
+<div class="glow glow-one"></div>
+<div class="glow glow-two"></div>
+<div class="glow glow-three"></div>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="exam-header">
+
+    <div class="header-left">
+
+        <div class="brand-logo">
+
+            <img
+                src="image/logo.png"
+                alt="CM Computer Centre"
+            >
+
+        </div>
+
+        <div class="brand-text">
+
+            <strong>CM COMPUTER CENTRE</strong>
+
+            <span>
+                ONLINE THEORY EXAMINATION SYSTEM
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="header-right">
+
+        <div class="exam-live">
+
+            <span class="live-dot"></span>
+
+            EXAM LIVE
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     MAIN
+========================================================= -->
+
+<main class="theory-container">
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="theory-hero">
+
+    <div class="hero-badge">
+        🧠 THEORY EXAMINATION
+    </div>
+
+    <h1>
+        Online Theory Test
+    </h1>
+
+    <p>
+        Complete your course-specific theory examination
+        carefully and submit your answers before the timer ends.
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     STUDENT INFORMATION
+========================================================= -->
+
+<section class="student-panel">
+
+    <div class="student-photo-box">
+
+        <img
+            id="studentPhoto"
+            src="image/logo.png"
+            alt="Student Photo"
+        >
+
+        <span class="photo-status">
+            VERIFIED
+        </span>
+
+    </div>
+
+
+    <div class="student-details">
+
+        <div class="student-detail">
+
+            <span>STUDENT NAME</span>
+
+            <strong id="studentName">
+                Loading...
+            </strong>
+
+        </div>
+
+
+        <div class="student-detail">
+
+            <span>STUDENT ID</span>
+
+            <strong id="studentId">
+                ---
+            </strong>
+
+        </div>
+
+
+        <div class="student-detail">
+
+            <span>COURSE</span>
+
+            <strong id="studentCourse">
+                ---
+            </strong>
+
+        </div>
+
+
+        <div class="student-detail">
+
+            <span>MODULE</span>
+
+            <strong id="studentModule">
+                ---
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     EXAM INFORMATION
+========================================================= -->
+
+<section class="exam-info-grid">
+
+
+    <div class="exam-info-card">
+
+        <span class="info-icon">
+            📚
+        </span>
+
+        <div>
+
+            <small>
+                TOTAL QUESTIONS
+            </small>
+
+            <strong id="totalQuestions">
+                100
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="exam-info-card">
+
+        <span class="info-icon">
+            ⏱️
+        </span>
+
+        <div>
+
+            <small>
+                EXAM TIME
+            </small>
+
+            <strong>
+                50 MIN
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="exam-info-card">
+
+        <span class="info-icon">
+            🎯
+        </span>
+
+        <div>
+
+            <small>
+                PASS MARKS
+            </small>
+
+            <strong>
+                40%
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="exam-info-card timer-card">
+
+        <span class="info-icon">
+            ⏳
+        </span>
+
+        <div>
+
+            <small>
+                REMAINING TIME
+            </small>
+
+            <strong id="examTimer">
+                50:00
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     EXAM WARNING
+========================================================= -->
+
+<section class="warning-box">
+
+    <div class="warning-icon">
+        ⚠
+    </div>
+
+    <div>
+
+        <strong>
+            Examination Instructions
+        </strong>
+
+        <p>
+            Read every question carefully. Select one correct
+            answer for each question. Do not refresh or close
+            the examination page during the test.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     QUESTION AREA
+========================================================= -->
+
+<section class="question-section">
+
+
+    <!-- QUESTION HEADER -->
+
+    <div class="question-header">
+
+        <div>
+
+            <span class="section-label">
+                THEORY QUESTIONS
+            </span>
+
+            <h2>
+                Answer All Questions
+            </h2>
+
+        </div>
+
+
+        <div class="question-counter">
+
+            <strong id="currentQuestionNumber">
+                01
+            </strong>
+
+            <span>
+                /
+            </span>
+
+            <strong id="questionTotalDisplay">
+                100
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <!-- PROGRESS -->
+
+    <div class="progress-area">
+
+        <div class="progress-top">
+
+            <span id="progressText">
+                Question 1 of 100
+            </span>
+
+            <span id="answeredText">
+                Answered: 0 / 100
+            </span>
+
+        </div>
+
+
+        <div class="progress-bar">
+
+            <div
+                class="progress-fill"
+                id="progressFill"
+            ></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         QUESTION CONTAINER
+    ====================================================== -->
+
+    <div
+        class="questions-container"
+        id="questionsContainer"
+    >
+
+        <div class="question-loading">
+
+            <div class="mini-loader"></div>
+
+            <p>
+                Loading 100 questions...
+            </p>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+<!-- =========================================================
+     QUESTION NAVIGATION
+========================================================= -->
+
+<section class="question-navigation">
+
+
+    <button
+        type="button"
+        class="question-nav-btn previous"
+        id="previousQuestionBtn"
+    >
+
+        ← Previous
+
+    </button>
+
+
+    <button
+        type="button"
+        class="question-nav-btn review"
+        id="reviewQuestionBtn"
+    >
+
+        🔖 Review
+
+    </button>
+
+
+    <button
+        type="button"
+        class="question-nav-btn next"
+        id="nextQuestionBtn"
+    >
+
+        Next →
+
+    </button>
+
+</section>
+
+
+<!-- =========================================================
+     QUESTION PALETTE
+========================================================= -->
+
+<section class="question-palette-section">
+
+    <div class="palette-header">
+
+        <div>
+
+            <span>
+                QUESTION NAVIGATOR
+            </span>
+
+            <h2>
+                Jump to Question
+            </h2>
+
+        </div>
+
+
+        <div class="palette-legend">
+
+            <span>
+                <i class="legend answered"></i>
+                Answered
+            </span>
+
+            <span>
+                <i class="legend review"></i>
+                Review
+            </span>
+
+            <span>
+                <i class="legend current"></i>
+                Current
+            </span>
+
+            <span>
+                <i class="legend unanswered"></i>
+                Unanswered
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div
+        class="question-palette"
+        id="questionPalette"
+    >
+
+        <!-- JS WILL CREATE 100 BUTTONS -->
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SUBMIT PANEL
+========================================================= -->
+
+<section class="submit-panel">
+
+    <div class="submit-warning">
+
+        <div class="submit-warning-icon">
+            ⚠
+        </div>
+
+        <div>
+
+            <strong>
+                Before Final Submission
+            </strong>
+
+            <p>
+                Please check your answers carefully.
+                Once you submit the examination,
+                you cannot change your answers.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="submit-summary">
+
+        <div>
+
+            <span>
+                TOTAL
+            </span>
+
+            <strong id="submitTotal">
+                100
+            </strong>
+
+        </div>
+
+
+        <div>
+
+            <span>
+                ANSWERED
+            </span>
+
+            <strong id="submitAnswered">
+                0
+            </strong>
+
+        </div>
+
+
+        <div>
+
+            <span>
+                UNANSWERED
+            </span>
+
+            <strong id="submitUnanswered">
+                100
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <button
+        type="button"
+        class="submit-theory-btn"
+        id="submitTheoryBtn"
+    >
+
+        <span>
+            ✓
+        </span>
+
+        SUBMIT THEORY TEST
+
+    </button>
+
+
+    <div
+        class="test-message"
+        id="testMessage"
+    ></div>
+
+</section>
+
+
+<!-- =========================================================
+     EXAM PROCESS
+========================================================= -->
+
+<section class="process-section">
+
+    <div class="section-heading">
+
+        <span>
+            EXAM PROCESS
+        </span>
+
+        <h2>
+            Theory Examination Flow
+        </h2>
+
+        <p>
+            Follow these steps during your examination.
+        </p>
+
+    </div>
+
+
+    <div class="process-grid">
+
+
+        <div class="process-card active">
+
+            <span>
+                01
+            </span>
+
+            <strong>
+                Read
+            </strong>
+
+            <p>
+                Read each question carefully.
+            </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+            <span>
+                02
+            </span>
+
+            <strong>
+                Answer
+            </strong>
+
+            <p>
+                Select the correct option.
+            </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+            <span>
+                03
+            </span>
+
+            <strong>
+                Review
+            </strong>
+
+            <p>
+                Review unanswered questions.
+            </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+            <span>
+                04
+            </span>
+
+            <strong>
+                Submit
+            </strong>
+
+            <p>
+                Submit before the timer ends.
+            </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+            <span>
+                05
+            </span>
+
+            <strong>
+                Result
+            </strong>
+
+            <p>
+                Your theory result will be generated.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SECURITY
+========================================================= -->
+
+<section class="security-panel">
+
+    <div class="security-icon">
+        🔒
+    </div>
+
+    <div>
+
+        <strong>
+            Examination Security
+        </strong>
+
+        <p>
+            Your examination is linked with your Student ID,
+            selected course and module.
+        </p>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="exam-footer">
+
+    <div>
+
+        <strong>
+            CM COMPUTER CENTRE
+        </strong>
+
+        <span>
+            Digital Learning • Computer Education •
+            Skill Development
+        </span>
+
+    </div>
+
+
+    <p>
+
+        ©
+        <span id="currentYear"></span>
+        CM Computer Centre.
+        All Rights Reserved.
+
+    </p>
+
+</footer>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script src="theory new.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Theory Result | CM Computer Centre</title>
+
+    <link rel="stylesheet" href="theory result.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         PAGE LOADER
+    ========================================== -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-ring"></div>
+        <div class="loader-text">GENERATING RESULT...</div>
+    </div>
+
+
+    <!-- =========================================
+         BACKGROUND EFFECTS
+    ========================================== -->
+    <div class="bg-grid"></div>
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <div class="glow glow-3"></div>
+
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+    <header class="result-header">
+
+        <div class="header-inner">
+
+            <a href="index.html" class="brand">
+
+                <div class="brand-logo">
+                    <img src="image/logo.png" alt="CM Computer Centre">
+                </div>
+
+                <div class="brand-text">
+                    <span>CM COMPUTER</span>
+                    <strong>CENTRE</strong>
+                </div>
+
+            </a>
+
+
+            <div class="result-status">
+                <span class="status-dot"></span>
+                RESULT GENERATED
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================================
+         MAIN
+    ========================================== -->
+    <main class="result-main">
+
+
+        <!-- =====================================
+             HERO
+        ====================================== -->
+        <section class="result-hero">
+
+            <div class="hero-badge">
+                <span>✦</span>
+                THEORY EXAMINATION
+                <span>✦</span>
+            </div>
+
+            <h1>
+                THEORY
+                <span>RESULT</span>
+            </h1>
+
+            <p>
+                Your theory examination result has been successfully generated.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================
+             STUDENT RESULT CARD
+        ====================================== -->
+        <section class="result-card">
+
+            <div class="result-card-top">
+
+                <div class="student-profile">
+
+                    <div class="student-photo-wrap">
+
+                        <div class="photo-ring"></div>
+
+                        <img
+                            id="studentPhoto"
+                            src="image/logo.png"
+                            alt="Student Photo"
+                        >
+
+                    </div>
+
+
+                    <div class="student-details">
+
+                        <div class="small-label">
+                            STUDENT
+                        </div>
+
+                        <h2 id="studentName">
+                            Student Name
+                        </h2>
+
+                        <p>
+                            Student ID:
+                            <strong id="studentId">---</strong>
+                        </p>
+
+                        <p>
+                            Course:
+                            <strong id="studentCourse">---</strong>
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="exam-badge">
+
+                    <span class="badge-icon">📘</span>
+
+                    <div>
+                        <small>EXAM TYPE</small>
+                        <strong>THEORY TEST</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 RESULT STATUS
+            ================================== -->
+            <div class="result-status-box" id="resultStatusBox">
+
+                <div class="result-icon" id="resultIcon">
+                    ✓
+                </div>
+
+                <div class="result-status-content">
+
+                    <span id="resultLabel">
+                        RESULT
+                    </span>
+
+                    <h2 id="resultStatus">
+                        CALCULATING...
+                    </h2>
+
+                    <p id="resultMessage">
+                        Please wait while your result is being processed.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 SCORE GRID
+            ================================== -->
+            <div class="score-grid">
+
+
+                <div class="score-item">
+
+                    <span class="score-icon">🎯</span>
+
+                    <div>
+                        <small>TOTAL QUESTIONS</small>
+                        <strong id="totalQuestions">20</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="score-item">
+
+                    <span class="score-icon">✓</span>
+
+                    <div>
+                        <small>CORRECT</small>
+                        <strong id="correctAnswers">0</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="score-item">
+
+                    <span class="score-icon">✕</span>
+
+                    <div>
+                        <small>WRONG</small>
+                        <strong id="wrongAnswers">0</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="score-item">
+
+                    <span class="score-icon">—</span>
+
+                    <div>
+                        <small>UNANSWERED</small>
+                        <strong id="unanswered">0</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 MAIN SCORE
+            ================================== -->
+            <div class="main-score">
+
+                <div class="score-title">
+                    THEORY SCORE
+                </div>
+
+                <div class="score-number">
+                    <span id="score">0</span>
+                    <small>/ 20</small>
+                </div>
+
+                <div class="percentage">
+                    <span id="percentage">0%</span>
+                </div>
+
+                <div class="score-progress">
+
+                    <div
+                        class="score-progress-fill"
+                        id="scoreProgress"
+                    ></div>
+
+                </div>
+
+                <p>
+                    Minimum qualifying marks:
+                    <strong>40%</strong>
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================
+                 EXAM INFORMATION
+            ================================== -->
+            <div class="exam-information">
+
+                <div class="info-box">
+
+                    <span>📅</span>
+
+                    <div>
+                        <small>EXAM DATE</small>
+                        <strong id="examDate">---</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="info-box">
+
+                    <span>⏱</span>
+
+                    <div>
+                        <small>EXAM DURATION</small>
+                        <strong>50 Minutes</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="info-box">
+
+                    <span>🏆</span>
+
+                    <div>
+                        <small>QUALIFYING</small>
+                        <strong>40%</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 FINAL NOTICE
+            ================================== -->
+            <section class="final-notice" id="finalNotice">
+
+                <div class="notice-icon">
+                    📢
+                </div>
+
+                <div class="notice-content">
+
+                    <span class="notice-label">
+                        FINAL RESULT NOTICE
+                    </span>
+
+                    <h3 id="noticeTitle">
+                        Result Processing
+                    </h3>
+
+                    <p id="noticeText">
+                        Your final examination status will be displayed here.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================
+                 ACTION AREA
+            ================================== -->
+            <div class="result-actions" id="resultActions">
+
+                <!-- PASS BUTTON -->
+                <button
+                    type="button"
+                    class="action-btn practical-btn"
+                    id="practicalYesBtn"
+                    style="display:none;"
+                >
+                    <span>✓</span>
+
+                    <div>
+                        <strong>YES</strong>
+                        <small>Start Practical Test</small>
+                    </div>
+
+                    <b>→</b>
+                </button>
+
+
+                <!-- NO BUTTON -->
+                <button
+                    type="button"
+                    class="action-btn no-btn"
+                    id="practicalNoBtn"
+                    style="display:none;"
+                >
+                    <span>✕</span>
+
+                    <div>
+                        <strong>NO</strong>
+                        <small>Go Back</small>
+                    </div>
+
+                    <b>→</b>
+                </button>
+
+
+                <!-- RETRY BUTTON -->
+                <button
+                    type="button"
+                    class="action-btn retry-btn"
+                    id="retryTheoryBtn"
+                    style="display:none;"
+                >
+                    <span>↻</span>
+
+                    <div>
+                        <strong>RETRY THEORY</strong>
+                        <small>Take Theory Test Again</small>
+                    </div>
+
+                    <b>→</b>
+                </button>
+
+            </div>
+
+
+            <!-- =================================
+                 RESULT MESSAGE
+            ================================== -->
+            <div
+                class="action-message"
+                id="actionMessage"
+            ></div>
+
+
+        </section>
+
+
+
+        <!-- =====================================
+             FINAL RESULT INFO
+        ====================================== -->
+        <section class="future-result-card">
+
+            <div class="future-icon">
+                🏆
+            </div>
+
+            <div>
+
+                <span>
+                    FINAL RESULT
+                </span>
+
+                <h2>
+                    Theory + Practical
+                </h2>
+
+                <p>
+                    Final PASS / FAIL status will be generated
+                    after completion of the eligible practical examination.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             SECURITY NOTE
+        ====================================== -->
+        <section class="security-note">
+
+            <span>🔐</span>
+
+            <p>
+                This result is generated by
+                <strong>CM Computer Centre Examination System</strong>.
+                Please keep your Student ID safe for future reference.
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+    <footer class="result-footer">
+
+        <div class="footer-line"></div>
+
+        <p>
+            © <span id="currentYear"></span>
+            CM COMPUTER CENTRE
+            <span class="dot-separator">•</span>
+            THEORY EXAMINATION SYSTEM
+        </p>
+
+        <small>
+            Learn • Practice • Succeed
+        </small>
+
+    </footer>
+
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+    <script src="theory result.js"></script>
+
+</body>
+</html>

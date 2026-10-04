@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Monthly Test Result | CM Computer Centre</title>
+
+    <link rel="stylesheet" href="monthly result.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         PAGE LOADER
+    ====================================================== -->
+
+    <div class="page-loader" id="pageLoader">
+
+        <div class="loader-ring"></div>
+
+        <div class="loader-text">
+            CM COMPUTER CENTRE
+            <span>Loading Result...</span>
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="result-header">
+
+        <div class="header-container">
+
+            <!-- LOGO -->
+
+            <a href="index.html" class="logo-area">
+
+                <div class="logo-circle">
+
+                    <img
+                        src="image/logo.png"
+                        alt="CM Computer Centre Logo"
+                    >
+
+                </div>
+
+                <div class="logo-text">
+
+                    <h2>CM COMPUTER</h2>
+
+                    <span>CENTRE</span>
+
+                </div>
+
+            </a>
+
+
+            <!-- NAVIGATION -->
+
+            <nav class="result-nav">
+
+                <a href="dashboard.html">
+                    Home
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="services.html">
+                    Services
+                </a>
+
+                <a href="test-center.html">
+                    Test Center
+                </a>
+
+                <a href="results.html">
+                    My Results
+                </a>
+
+            </nav>
+
+
+            <!-- MOBILE MENU -->
+
+            <button
+                class="menu-btn"
+                id="menuBtn"
+                type="button"
+                aria-label="Open Menu"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main class="result-page">
+
+
+        <!-- =================================================
+             RESULT HERO
+        ================================================== -->
+
+        <section class="result-hero">
+
+            <div class="hero-glow glow-one"></div>
+            <div class="hero-glow glow-two"></div>
+
+            <div class="hero-content">
+
+                <span class="hero-label">
+                    CM COMPUTER CENTRE
+                </span>
+
+                <h1>
+                    Monthly Test
+                    <span>Result</span>
+                </h1>
+
+                <p>
+                    Student performance report
+                    and monthly examination result
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             RESULT CONTAINER
+        ================================================== -->
+
+        <section class="result-container">
+
+
+            <!-- BACK BUTTON -->
+
+            <div class="back-area">
+
+                <button
+                    type="button"
+                    class="back-btn"
+                    onclick="history.back()"
+                >
+                    ← Back
+                </button>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 RESULT CARD
+            ================================================== -->
+
+            <div class="result-card" id="resultCard">
+
+
+                <!-- RESULT TOP -->
+
+                <div class="result-top">
+
+                    <div class="result-title-area">
+
+                        <span class="result-small-title">
+                            MONTHLY EXAMINATION
+                        </span>
+
+                        <h2 id="resultTestTitle">
+                            Monthly Test Result
+                        </h2>
+
+                        <p id="resultMonthYear">
+                            Loading test information...
+                        </p>
+
+                    </div>
+
+
+                    <!-- STATUS -->
+
+                    <div
+                        class="status-badge"
+                        id="statusBadge"
+                    >
+                        <span id="statusIcon">
+                            ⏳
+                        </span>
+
+                        <strong id="statusText">
+                            Loading
+                        </strong>
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     STUDENT PROFILE
+                ================================================== -->
+
+                <div class="student-profile-card">
+
+
+                    <div class="student-photo-area">
+
+                        <div class="photo-ring">
+
+                            <img
+                                id="studentPhoto"
+                                src="image/user.jpeg"
+                                alt="Student Photo"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="student-information">
+
+                        <span class="info-label">
+                            STUDENT
+                        </span>
+
+                        <h3 id="studentName">
+                            Student
+                        </h3>
+
+
+                        <div class="student-info-grid">
+
+                            <div class="info-item">
+
+                                <span>
+                                    Student ID
+                                </span>
+
+                                <strong id="studentId">
+                                    CMCC-XXXX
+                                </strong>
+
+                            </div>
+
+
+                            <div class="info-item">
+
+                                <span>
+                                    Test
+                                </span>
+
+                                <strong id="testName">
+                                    Monthly Test
+                                </strong>
+
+                            </div>
+
+
+                            <div class="info-item">
+
+                                <span>
+                                    Month
+                                </span>
+
+                                <strong id="testMonth">
+                                    —
+                                </strong>
+
+                            </div>
+
+
+                            <div class="info-item">
+
+                                <span>
+                                    Year
+                                </span>
+
+                                <strong id="testYear">
+                                    —
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     SCORE SECTION
+                ================================================== -->
+
+                <div class="score-section">
+
+
+                    <div class="score-main">
+
+                        <span class="score-label">
+                            FINAL SCORE
+                        </span>
+
+                        <div class="score-value">
+
+                            <strong id="score">
+                                0
+                            </strong>
+
+                            <span>
+                                / <span id="totalQuestions">20</span>
+                            </span>
+
+                        </div>
+
+                        <div
+                            class="percentage"
+                            id="percentage"
+                        >
+                            0%
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- SCORE CIRCLE -->
+
+                    <div class="score-circle-area">
+
+                        <div class="score-circle">
+
+                            <svg
+                                viewBox="0 0 120 120"
+                                class="progress-circle"
+                            >
+
+                                <circle
+                                    class="circle-bg"
+                                    cx="60"
+                                    cy="60"
+                                    r="50"
+                                ></circle>
+
+                                <circle
+                                    class="circle-progress"
+                                    id="circleProgress"
+                                    cx="60"
+                                    cy="60"
+                                    r="50"
+                                ></circle>
+
+                            </svg>
+
+
+                            <div class="circle-content">
+
+                                <strong id="circlePercentage">
+                                    0%
+                                </strong>
+
+                                <span>
+                                    Score
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     PERFORMANCE GRID
+                ================================================== -->
+
+                <div class="performance-grid">
+
+
+                    <!-- CORRECT -->
+
+                    <div class="performance-box correct-box">
+
+                        <div class="performance-icon">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Correct Answers
+                            </span>
+
+                            <strong id="correctAnswers">
+                                0
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- WRONG -->
+
+                    <div class="performance-box wrong-box">
+
+                        <div class="performance-icon">
+                            ✕
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Wrong Answers
+                            </span>
+
+                            <strong id="wrongAnswers">
+                                0
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- UNANSWERED -->
+
+                    <div class="performance-box unanswered-box">
+
+                        <div class="performance-icon">
+                            ?
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Unanswered
+                            </span>
+
+                            <strong id="unansweredAnswers">
+                                0
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- TOTAL -->
+
+                    <div class="performance-box total-box">
+
+                        <div class="performance-icon">
+                            #
+                        </div>
+
+                        <div>
+
+                            <span>
+                                Total Questions
+                            </span>
+
+                            <strong id="totalAnswers">
+                                20
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     RESULT MESSAGE
+                ================================================== -->
+
+                <div
+                    class="result-message-box"
+                    id="resultMessageBox"
+                >
+
+                    <div
+                        class="message-icon"
+                        id="messageIcon"
+                    >
+                        🏆
+                    </div>
+
+                    <div class="message-content">
+
+                        <span>
+                            PERFORMANCE
+                        </span>
+
+                        <h3 id="resultMessageTitle">
+                            Congratulations!
+                        </h3>
+
+                        <p id="resultMessage">
+                            Your monthly test result will appear here.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     TEST DETAILS
+                ================================================== -->
+
+                <div class="test-details-section">
+
+                    <div class="section-heading">
+
+                        <span>
+                            EXAMINATION DETAILS
+                        </span>
+
+                        <h3>
+                            Test Information
+                        </h3>
+
+                    </div>
+
+
+                    <div class="details-grid">
+
+
+                        <div class="detail-item">
+
+                            <span>
+                                Test Name
+                            </span>
+
+                            <strong id="detailTestName">
+                                Monthly Test
+                            </strong>
+
+                        </div>
+
+
+                        <div class="detail-item">
+
+                            <span>
+                                Month
+                            </span>
+
+                            <strong id="detailMonth">
+                                —
+                            </strong>
+
+                        </div>
+
+
+                        <div class="detail-item">
+
+                            <span>
+                                Year
+                            </span>
+
+                            <strong id="detailYear">
+                                —
+                            </strong>
+
+                        </div>
+
+
+                        <div class="detail-item">
+
+                            <span>
+                                Total Marks
+                            </span>
+
+                            <strong id="detailTotalMarks">
+                                20
+                            </strong>
+
+                        </div>
+
+
+                        <div class="detail-item">
+
+                            <span>
+                                Passing Percentage
+                            </span>
+
+                            <strong>
+                                40%
+                            </strong>
+
+                        </div>
+
+
+                        <div class="detail-item">
+
+                            <span>
+                                Result
+                            </span>
+
+                            <strong id="detailStatus">
+                                —
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     RESULT DATE
+                ================================================== -->
+
+                <div class="result-date-area">
+
+                    <div>
+
+                        <span>
+                            RESULT GENERATED
+                        </span>
+
+                        <strong id="resultDate">
+                            —
+                        </strong>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            STUDENT ID
+                        </span>
+
+                        <strong id="bottomStudentId">
+                            CMCC-XXXX
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     ACTION BUTTONS
+                ================================================== -->
+
+                <div class="result-actions">
+
+                    <a
+                        href="dashboard.html"
+                        class="action-btn primary-btn"
+                    >
+                        🏠 Dashboard
+                    </a>
+
+
+                    <a
+                        href="results.html"
+                        class="action-btn secondary-btn"
+                    >
+                        📊 My Results
+                    </a>
+
+
+                    <a
+                        href="services.html"
+                        class="action-btn outline-btn"
+                    >
+                        ← Monthly Tests
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 RESULT NOT AVAILABLE
+            ================================================== -->
+
+            <div
+                class="result-not-found"
+                id="resultNotFound"
+                style="display:none;"
+            >
+
+                <div class="not-found-icon">
+                    📊
+                </div>
+
+                <span>
+                    RESULT NOT AVAILABLE
+                </span>
+
+                <h2>
+                    No Result Found
+                </h2>
+
+                <p id="notFoundMessage">
+                    Is month ke liye abhi koi submitted result available nahi hai.
+                </p>
+
+                <div class="not-found-actions">
+
+                    <a
+                        href="services.html"
+                        class="action-btn primary-btn"
+                    >
+                        ← Back to Monthly Tests
+                    </a>
+
+                    <a
+                        href="monthly.html"
+                        class="action-btn secondary-btn"
+                    >
+                        📝 Take Monthly Test
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             IMPORTANT NOTE
+        ================================================== -->
+
+        <section class="result-note">
+
+            <div class="note-icon">
+                🔐
+            </div>
+
+            <div>
+
+                <h3>
+                    Student Result Information
+                </h3>
+
+                <p>
+                    Ye result selected month ke submitted
+                    monthly test ke basis par show kiya jayega.
+                    Agar student ne test submit nahi kiya hai,
+                    to result available nahi hoga.
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="result-footer">
+
+        <div class="footer-inner">
+
+            <div class="footer-brand">
+
+                <h3>
+                    CM COMPUTER CENTRE
+                </h3>
+
+                <p>
+                    Learn • Practice • Test • Build Your Future
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="services.html">
+                    Monthly Tests
+                </a>
+
+                <a href="results.html">
+                    My Results
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            © 2026 CM Computer Centre.
+            All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         TOP BUTTON
+    ====================================================== -->
+
+    <button
+        class="top-button"
+        id="topButton"
+        type="button"
+        aria-label="Go to top"
+    >
+        ↑
+    </button>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="monthly resutl.js"></script>
+
+</body>
+
+</html>

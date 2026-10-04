@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | CM Computer Centre</title>
+
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <!-- BACKGROUND GLOW -->
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+    <div class="glow glow-three"></div>
+
+    <!-- LOGIN PAGE -->
+    <main class="login-page">
+
+        <div class="login-card">
+
+            <!-- LOGO -->
+            <div class="login-logo">
+                <img
+                    src="image/logo.png"
+                    alt="CM Computer Centre Logo">
+            </div>
+
+            <!-- HEADING -->
+            <p class="welcome">
+                WELCOME BACK
+            </p>
+
+            <h1>
+                LOGIN
+            </h1>
+
+            <p class="login-text">
+                Login to continue to
+                <strong>
+                    CM Computer Centre
+                </strong>
+            </p>
+
+            <!-- LOGIN FORM -->
+            <form id="loginForm">
+
+                <!-- NAME -->
+                <div class="input-box">
+
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your full name"
+                        required>
+
+                </div>
+
+                <!-- EMAIL -->
+                <div class="input-box">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email address"
+                        required>
+
+                </div>
+
+                <!-- MOBILE -->
+                <div class="input-box">
+
+                    <label for="mobile">
+                        Mobile Number
+                    </label>
+
+                    <div class="mobile-row">
+
+                        <span class="country-code">
+                            +91
+                        </span>
+
+                        <input
+                            type="tel"
+                            id="mobile"
+                            maxlength="10"
+                            inputmode="numeric"
+                            placeholder="Enter 10-digit mobile number"
+                            required>
+
+                    </div>
+
+                </div>
+
+                <!-- OTP SECTION -->
+                <div
+                    class="hidden-section"
+                    id="otpSection">
+
+                    <div class="input-box">
+
+                        <label for="otp">
+                            🔐 Enter OTP
+                        </label>
+
+                        <input
+                            type="text"
+                            id="otp"
+                            maxlength="6"
+                            inputmode="numeric"
+                            placeholder="Enter 6-digit OTP">
+
+                        <p
+                            id="otpHint"
+                            class="otp-hint">
+                        </p>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="verify-btn"
+                        id="verifyOtpBtn">
+
+                        VERIFY OTP ✓
+
+                    </button>
+
+                </div>
+
+                <!-- =================================
+                     PHOTO SECTION
+                     OTP VERIFY KE BAAD SHOW HOGA
+                ================================== -->
+                <div
+                    class="hidden-section"
+                    id="photoSection">
+
+                    <div class="input-box">
+
+                        <label for="studentPhotoInput">
+                            📸 Student Photo
+                        </label>
+
+                        <input
+                            type="file"
+                            id="studentPhotoInput"
+                            accept="image/*">
+
+                        <img
+                            id="photoPreview"
+                            src=""
+                            alt="Photo Preview"
+                            style="
+                                display:none;
+                                width:110px;
+                                height:110px;
+                                object-fit:cover;
+                                border-radius:50%;
+                                margin:15px auto;
+                                border:3px solid #00eaff;
+                                box-shadow:0 0 25px rgba(0,234,255,.5);
+                            ">
+
+                        <p
+                            id="photoHint"
+                            class="otp-hint">
+
+                            Select your photo
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- PASSWORD SECTION -->
+                <div
+                    class="hidden-section"
+                    id="passwordSection">
+
+                    <!-- PASSWORD -->
+                    <div class="input-box">
+
+                        <label for="password">
+                            🔒 Password
+                        </label>
+
+                        <div class="password-row">
+
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="Create your password"
+                                minlength="6">
+
+                            <button
+                                type="button"
+                                class="eye-btn"
+                                id="passwordEye">
+                                👁
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <!-- CONFIRM PASSWORD -->
+                    <div class="input-box">
+
+                        <label for="confirmPassword">
+                            🔒 Confirm Password
+                        </label>
+
+                        <div class="password-row">
+
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                placeholder="Confirm your password"
+                                minlength="6">
+
+                            <button
+                                type="button"
+                                class="eye-btn"
+                                id="confirmEye">
+                                👁
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <!-- LOGIN BUTTON -->
+                    <button
+                        type="submit"
+                        class="login-submit">
+
+                        <span>
+                            LOGIN
+                        </span>
+
+                        <span>
+                            →
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </form>
+
+            <!-- BACK HOME -->
+            <a
+                href="index.html"
+                class="back-home">
+
+                ← Back to Home
+
+            </a>
+
+            <!-- FOOTER -->
+            <div class="login-footer">
+
+                <strong>
+                    CM COMPUTER CENTRE
+                </strong>
+
+                <span>
+                    Learn • Practice • Build Your Future
+                </span>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- JAVASCRIPT -->
+    <script src="login.js"></script>
+
+</body>
+
+</html>

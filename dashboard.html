@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard | CM Computer Centre</title>
+
+    <link rel="stylesheet"
+          href="dashboard.css">
+
+</head>
+
+<body>
+
+
+    <!-- =========================================
+         HEADER / NAVBAR
+    ========================================== -->
+
+    <header class="dashboard-header">
+
+        <div class="logo-area">
+
+            <img src="image/logo.png"
+                 alt="CM Computer Centre Logo">
+
+            <div class="logo-text">
+
+                <h2>CM COMPUTER</h2>
+
+                <span>CENTRE</span>
+
+            </div>
+
+        </div>
+
+
+        <nav class="nav-menu">
+
+            <a href="dashboard.html"
+               class="nav-link active">
+                Home
+            </a>
+
+            <a href="about.html"
+               class="nav-link">
+                About
+            </a>
+
+            <a href="courses.html"
+               class="nav-link">
+                Courses
+            </a>
+
+            <a href="services.html"
+               class="nav-link">
+                Services
+            </a>
+
+            <a href="gallery.html"
+               class="nav-link">
+                Gallery
+            </a>
+
+            <a href="contact.html"
+               class="nav-link">
+                Contact
+            </a>
+
+            <a href="admission.html"
+               class="nav-link admission-link">
+                Admission
+            </a>
+
+            <a href="results.html"
+               class="nav-link">
+                Results
+            </a>
+
+            <a href="videos.html"
+               class="nav-link">
+                Videos
+            </a>
+
+            <button class="logout-btn"
+                    id="logoutBtn">
+                Logout
+            </button>
+
+            <a href="Admin login.html"
+              class="admin-btn">
+               🔐 Admin
+               </a>
+
+        </nav>
+
+
+        <button class="menu-btn"
+                id="menuBtn"
+                aria-label="Open Menu">
+
+            ☰
+
+        </button>
+
+    </header>
+
+
+
+    <!-- =========================================
+         MAIN DASHBOARD
+    ========================================== -->
+
+    <main class="dashboard">
+
+
+        <!-- =====================================
+             WELCOME SECTION
+        ====================================== -->
+
+        <section class="welcome-section">
+
+            <div class="welcome-content">
+
+                <p class="small-title">
+                    STUDENT PORTAL
+                </p>
+
+                <h1>
+
+                    Welcome to
+
+                    <span>
+                        CM COMPUTER CENTRE
+                    </span>
+
+                </h1>
+
+                <p>
+                    Learn • Practice • Test •
+                    Build Your Future
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================
+                 STUDENT PROFILE BOX
+            ================================== -->
+
+            <div class="student-box">
+
+
+                <!-- USER PHOTO -->
+
+                <div class="student-profile">
+
+                    <img
+                        id="studentPhoto"
+                        src="image/imgae"
+                        alt="Student Photo">
+
+                </div>
+
+
+
+                <!-- USER INFORMATION -->
+
+                <div class="student-details">
+
+                    <span class="welcome-user">
+                        👋 Welcome Student
+                    </span>
+
+                    <h3 id="studentName">
+                        Student
+                    </h3>
+
+                    <p>
+
+                        Student ID:
+
+                        <strong id="studentId">
+                            CM2026
+                        </strong>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             IMPORTANT NOTICE
+        ====================================== -->
+
+        <section class="notice-section">
+
+
+            <div class="section-heading">
+
+                <p>
+                    IMPORTANT
+                </p>
+
+                <h2>
+                    📢 Notices
+                </h2>
+
+            </div>
+
+
+
+            <div class="notice-box">
+
+                <div class="notice-icon">
+                    📢
+                </div>
+
+
+                <div class="notice-content">
+
+                    <h3>
+                        Admission & Test Notice
+                    </h3>
+
+                    <p>
+
+                        Admission form भरने के बाद
+                        candidate अपना course select
+                        करके entrance test दे सकता है।
+
+                    </p>
+
+                </div>
+
+
+                <span class="notice-badge">
+                    NEW
+                </span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             COURSE SECTION
+        ====================================== -->
+
+        <section class="courses-section">
+
+
+            <div class="section-heading">
+
+                <p>
+                    EXPLORE
+                </p>
+
+                <h2>
+                    📚 Our Courses
+                </h2>
+
+                <span>
+                    अपने पसंदीदा course को explore करें
+                </span>
+
+            </div>
+
+
+
+            <div class="course-grid">
+
+
+                <!-- =================================
+                     ADCA
+                ================================== -->
+
+                <div class="course-card">
+
+                    <div class="course-image">
+
+                        <div class="course-icon">
+                            💻
+                        </div>
+
+                    </div>
+
+
+                    <div class="course-content">
+
+                        <span class="course-tag">
+                            COMPUTER
+                        </span>
+
+                        <h3>
+                            ADCA
+                        </h3>
+
+                        <p>
+                            Advanced Diploma in
+                            Computer Applications
+                        </p>
+
+                      <a
+                       href="adaca.html"
+                         class="course-btn">
+                                    <span>
+                                 View Course →
+                                   </span>
+
+                                  </a>
+
+                             </div>
+
+                            </div>
+
+
+
+                <!-- =================================
+                     O LEVEL
+                ================================== -->
+
+                <div class="course-card">
+
+                    <div class="course-image">
+
+                        <div class="course-icon">
+                            🎓
+                        </div>
+
+                    </div>
+
+
+                    <div class="course-content">
+
+                        <span class="course-tag">
+                            GOVERNMENT
+                        </span>
+
+                        <h3>
+                            O LEVEL
+                        </h3>
+
+                        <p>
+                            NIELIT O Level Computer
+                            Course
+                        </p>
+
+
+                      <a
+                     href="o level.html"
+                    class="course-btn">
+                        View Course
+                        <span>
+                        </span> 
+                    </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================
+                     CCC
+                ================================== -->
+
+                <div class="course-card">
+
+                    <div class="course-image">
+
+                        <div class="course-icon">
+                            🖥️
+                        </div>
+
+                    </div>
+
+
+                    <div class="course-content">
+
+                        <span class="course-tag">
+                            BASIC
+                        </span>
+
+                        <h3>
+                            CCC
+                        </h3>
+
+                        <p>
+                            Course on Computer
+                            Concepts
+                        </p>
+
+                        <button
+                            class="course-btn"
+                            onclick="viewCourse('CCC')">
+
+                            View Course
+
+                            <span>
+                                →
+                            </span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================
+                     TALLY
+                ================================== -->
+
+                <div class="course-card">
+
+                    <div class="course-image">
+
+                        <div class="course-icon">
+                            📊
+                        </div>
+
+                    </div>
+
+
+                    <div class="course-content">
+
+                        <span class="course-tag">
+                            ACCOUNTING
+                        </span>
+
+                        <h3>
+                            TALLY
+                        </h3>
+
+                        <p>
+                            Tally Prime &
+                            Accounting
+                        </p>
+
+                        <button
+                            class="course-btn"
+                            onclick="viewCourse('Tally')">
+
+                            View Course
+
+                            <span>
+                                →
+                            </span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================
+                     DCA
+                ================================== -->
+
+                <div class="course-card">
+
+                    <div class="course-image">
+
+                        <div class="course-icon">
+                            📘
+                        </div>
+
+                    </div>
+
+
+                    <div class="course-content">
+
+                        <span class="course-tag">
+                            DIPLOMA
+                        </span>
+
+                        <h3>
+                            DCA
+                        </h3>
+
+                        <p>
+                            Diploma in Computer
+                            Applications
+                        </p>
+
+                        <button
+                            class="course-btn"
+                            onclick="viewCourse('DCA')">
+
+                            View Course
+
+                            <span>
+                                →
+                            </span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================
+                     PGDCA
+                ================================== -->
+
+                <div class="course-card">
+
+                    <div class="course-image">
+
+                        <div class="course-icon">
+                            🚀
+                        </div>
+
+                    </div>
+
+
+                    <div class="course-content">
+
+                        <span class="course-tag">
+                            ADVANCED
+                        </span>
+
+                        <h3>
+                            PGDCA
+                        </h3>
+
+                        <p>
+                            Post Graduate Diploma
+                            in Computer Applications
+                        </p>
+
+                        <button
+                            class="course-btn"
+                            onclick="viewCourse('PGDCA')">
+
+                            View Course
+
+                            <span>
+                                →
+                            </span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================
+                     WEB DESIGNING
+                ================================== -->
+
+                <div class="course-card">
+
+                    <div class="course-image">
+
+                        <div class="course-icon">
+                            🌐
+                        </div>
+
+                    </div>
+
+
+                    <div class="course-content">
+
+                        <span class="course-tag">
+                            DEVELOPMENT
+                        </span>
+
+                        <h3>
+                            WEB DESIGNING
+                        </h3>
+
+                        <p>
+                            HTML • CSS • JavaScript
+                        </p>
+
+                        <button
+                            class="course-btn"
+                            onclick="viewCourse('Web Designing')">
+
+                            View Course
+
+                            <span>
+                                →
+                            </span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================
+                     MS OFFICE
+                ================================== -->
+
+                <div class="course-card">
+
+                    <div class="course-image">
+
+                        <div class="course-icon">
+                            📑
+                        </div>
+
+                    </div>
+
+
+                    <div class="course-content">
+
+                        <span class="course-tag">
+                            OFFICE
+                        </span>
+
+                        <h3>
+                            MS OFFICE
+                        </h3>
+
+                        <p>
+                            Word • Excel • PowerPoint
+                        </p>
+
+                        <button
+                            class="course-btn"
+                            onclick="viewCourse('MS Office')">
+
+                            View Course
+
+                            <span>
+                                →
+                            </span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             QUICK ACTIONS
+        ====================================== -->
+
+        <section class="quick-section">
+
+
+            <div class="section-heading">
+
+                <p>
+                    STUDENT AREA
+                </p>
+
+                <h2>
+                    ⚡ Quick Access
+                </h2>
+
+            </div>
+
+
+
+            <div class="quick-grid">
+
+
+                <!-- ADMISSION -->
+
+                <div class="quick-card admission-card">
+
+                    <div class="quick-icon">
+                        🎓
+                    </div>
+
+                    <h3>
+                        Admission
+                    </h3>
+
+                    <p>
+                        Admission form भरें और
+                        अपना course choose करें।
+                    </p>
+
+                    <a href="admission.html">
+                        Start Admission →
+                    </a>
+
+                </div>
+
+
+
+                <!-- TEST -->
+
+              <!-- TEST CENTER -->
+          <div class="quick-card test-card">
+
+          <div class="quick-icon"> 
+        🧪
+             </div>
+
+           <h3>
+         Test Center
+           </h3>
+
+       <p>
+        Apne course ka Theory aur Practical
+        test choose karke test dein.
+        </p>
+
+    <a href="test choose.html">
+        Choose Test →
+    </a>
+
+</div>
+
+
+                <div class="quick-card monthly-card">
+         <div class="quick-icon">📝</div>
+
+          <h3>Monthly Test</h3>
+   
+          <p>
+           Har month ka test dekar apni preparation
+            aur knowledge check karein.
+         </p>
+
+        <a href="monthly.html">
+        Start Monthly Test →
+      </a>
+      </div>
+
+
+
+                <!-- RESULT -->
+
+                <div class="quick-card result-card">
+
+                    <div class="quick-icon">
+                        📊
+                    </div>
+
+                    <h3>
+                        My Results
+                    </h3>
+
+                    <p>
+                        अपने test score और
+                        performance को देखें।
+                    </p>
+
+                    <a href="results.html">
+                        View Result →
+                    </a>
+
+                </div>
+
+
+
+                <!-- VIDEOS -->
+
+                <div class="quick-card video-card">
+
+                    <div class="quick-icon">
+                        🎥
+                    </div>
+
+                    <h3>
+                        Learning Videos
+                    </h3>
+
+                    <p>
+                        Course के learning videos
+                        देखें और practice करें।
+                    </p>
+
+                    <a href="videos.html">
+                        Watch Videos →
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             ADMISSION CTA
+        ====================================== -->
+
+        <section class="admission-banner">
+
+
+            <div>
+
+                <p>
+                    READY TO START?
+                </p>
+
+                <h2>
+                    Start Your Computer
+                    Learning Journey 🚀
+                </h2>
+
+                <span>
+                    Form भरें → Course चुनें →
+                    Test दें → Result पाएं
+                </span>
+
+            </div>
+
+
+            <a href="admission.html"
+               class="main-admission-btn">
+
+                🎓 START ADMISSION
+
+            </a>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="dashboard-footer">
+
+
+        <div class="footer-content">
+
+
+            <div>
+
+                <h3>
+                    CM COMPUTER CENTRE
+                </h3>
+
+                <p>
+                    Learn • Practice • Build
+                    Your Future
+                </p>
+
+            </div>
+
+
+
+            <div>
+
+                <h4>
+                    Student Portal
+                </h4>
+
+                <p>
+                    Courses
+                </p>
+
+                <p>
+                    Tests
+                </p>
+
+                <p>
+                    Results
+                </p>
+
+            </div>
+
+
+
+            <div>
+
+                <h4>
+                    Contact
+                </h4>
+
+                <p>
+                    Phone: Your Number
+                </p>
+
+                <p>
+                    Email: Your Email
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="copyright">
+
+            © 2026 CM Computer Centre.
+            All Rights Reserved.
+
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>

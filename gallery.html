@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | CM COMPUTER CENTRE</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Gallery CSS -->
+    <link rel="stylesheet" href="gallery.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         PAGE LOADER
+    ========================== -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-logo">
+            <img src="image/logo.png" alt="CM Computer Centre Logo">
+        </div>
+
+        <div class="loader-ring"></div>
+
+        <p>Loading Gallery...</p>
+    </div>
+
+
+    <!-- =========================
+         CURSOR GLOW
+    ========================== -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+    <header class="gallery-header">
+
+        <div class="header-container">
+
+            <!-- LOGO -->
+            <a href="index.html" class="gallery-logo">
+
+                <div class="logo-circle">
+                    <img src="image/logo.png" alt="CM Computer Centre">
+                </div>
+
+                <div class="logo-text">
+                    <span>CM COMPUTER</span>
+                    <strong>CENTRE</strong>
+                </div>
+
+            </a>
+
+
+            <!-- MOBILE MENU -->
+            <button class="menu-btn" id="menuBtn" aria-label="Open Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+
+            <!-- NAVIGATION -->
+            <nav class="gallery-nav" id="galleryNav">
+
+                <a href="dashboard.html">Home</a>
+
+                <a href="about.html">About</a>
+
+                <a href="courses.html">Courses</a>
+
+                <a href="services.html">Services</a>
+
+                <a href="gallery.html" class="active">Gallery</a>
+
+                <a href="contact.html">Contact</a>
+
+                <a href="admission.html">Admission</a>
+
+                <!-- <a href="login.html" class="nav-login">
+                    Login
+                </a> -->
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+    <main>
+
+        <section class="gallery-hero">
+
+            <div class="hero-particles"></div>
+
+            <div class="hero-content reveal">
+
+                <span class="hero-badge">
+                    📸 CM COMPUTER CENTRE
+                </span>
+
+                <h1>
+                    Our <span>Gallery</span>
+                </h1>
+
+                <p>
+                    Memories, Events & Moments
+                    <br>
+                    from CM Computer Centre
+                </p>
+
+                <div class="hero-line"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             OFFICE GALLERY
+        ========================== -->
+        <section class="gallery-section">
+
+            <div class="section-heading reveal">
+
+                <span class="section-tag">
+                    🏢 OUR INSTITUTE
+                </span>
+
+                <h2>
+                    Centre <span>Moments</span>
+                </h2>
+
+                <p>
+                    Explore some memorable moments and beautiful
+                    memories from CM Computer Centre.
+                </p>
+
+            </div>
+
+
+            <!-- 10 PHOTOS -->
+            <div class="photo-slider-wrapper reveal">
+
+                <button class="slider-btn prev-btn" id="officePrev">
+                    &#10094;
+                </button>
+
+                <div class="photo-slider" id="officeSlider">
+
+
+                    <!-- PHOTO 01 -->
+                    <article class="gallery-card">
+
+                        <div class="photo-box">
+
+                            <img
+                                src="image/gallery-01.jpg"
+                                alt="CM Computer Centre"
+                                loading="lazy"
+                            >
+
+                            <div class="photo-overlay">
+                                <span>View Photo</span>
+                            </div>
+
+                        </div>
+
+                        <div class="photo-info">
+
+                            <span class="photo-number">01</span>
+
+                            <h3>
+                                CM Computer Centre
+                            </h3>
+
+                            <p>
+                                Our Computer Centre
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PHOTO 02 -->
+                    <article class="gallery-card">
+
+                        <div class="photo-box">
+
+                            <img
+                                src="image/gallery-02.jpg"
+                                alt="Computer Lab"
+                                loading="lazy"
+                            >
+
+                            <div class="photo-overlay">
+                                <span>View Photo</span>
+                            </div>
+
+                        </div>
+
+                        <div class="photo-info">
+
+                            <span class="photo-number">02</span>
+
+                            <h3>
+                                Computer Lab
+                            </h3>
+
+                            <p>
+                                Learning & Practice
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PHOTO 03 -->
+                    <article class="gallery-card">
+
+                        <div class="photo-box">
+
+                            <img
+                                src="image/gallery-03.jpg"
+                                alt="Students Learning"
+                                loading="lazy"
+                            >
+
+                            <div class="photo-overlay">
+                                <span>View Photo</span>
+                            </div>
+
+                        </div>
+
+                        <div class="photo-info">
+
+                            <span class="photo-number">03</span>
+
+                            <h3>
+                                Students Learning
+                            </h3>
+
+                            <p>
+                                Computer Education
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PHOTO 04 -->
+                    <article class="gallery-card">
+
+                        <div class="photo-box">
+
+                            <img
+                                src="image/gallery-04.jpg"
+                                alt="Institute Moment"
+                                loading="lazy"
+                            >
+
+                            <div class="photo-overlay">
+                                <span>View Photo</span>
+                            </div>
+
+                        </div>
+
+                        <div class="photo-info">
+
+                            <span class="photo-number">04</span>
+
+                            <h3>
+                                Institute Moment
+                            </h3>
+
+                            <p>
+                                A Memorable Day
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PHOTO 05 -->
+                    <article class="gallery-card">
+
+                        <div class="photo-box">
+
+                            <img
+                                src="image/gallery-05.jpg"
+                                alt="Classroom"
+                                loading="lazy"
+                            >
+
+                            <div class="photo-overlay">
+                                <span>View Photo</span>
+                            </div>
+
+                        </div>
+
+                        <div class="photo-info">
+
+                            <span class="photo-number">05</span>
+
+                            <h3>
+                                Classroom
+                            </h3>
+
+                            <p>
+                                Knowledge & Skills
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PHOTO 06 -->
+                    <article class="gallery-card">
+
+                        <div class="photo-box">
+
+                            <img
+                                src="image/gallery-06.jpg"
+                                alt="Computer Training"
+                                loading="lazy"
+                            >
+
+                            <div class="photo-overlay">
+                                <span>View Photo</span>
+                            </div>
+
+                        </div>
+
+                        <div class="photo-info">
+
+                            <span class="photo-number">06</span>
+
+                            <h3>
+                                Computer Training
+                            </h3>
+
+                            <p>
+                                Practical Learning
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PHOTO 07 -->
+                    <article class="gallery-card">
+
+                        <div class="photo-box">
+
+                            <img
+                                src="image/gallery-07.jpg"
+                                alt="Student Activities"
+                                loading="lazy"
+                            >
+
+                            <div class="photo-overlay">
+                                <span>View Photo</span>
+                            </div>
+
+                        </div>
+
+                        <div class="photo-info">
+
+                            <span class="photo-number">07</span>
+
+                            <h3>
+                                Student Activities
+                            </h3>
+
+                            <p>
+                                Learning Together
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PHOTO 08 -->
+                    <article class="gallery-card">
+
+                        <div class="photo-box">
+
+                            <img
+                                src="image/gallery-08.jpg"
+                                alt="Centre Activity"
+                                loading="lazy"
+                            >
+
+                            <div class="photo-overlay">
+                                <span>View Photo</span>
+                            </div>
+
+                        </div>
+
+                        <div class="photo-info">
+
+                            <span class="photo-number">08</span>
+
+                            <h3>
+                                Centre Activity
+                            </h3>
+
+                            <p>
+                                Special Moments
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PHOTO 09 -->
+                    <article class="gallery-card">
+
+                        <div class="photo-box">
+
+                            <img
+                                src="image/gallery-09.jpg"
+                                alt="Students"
+                                loading="lazy"
+                            >
+
+                            <div class="photo-overlay">
+                                <span>View Photo</span>
+                            </div>
+
+                        </div>
+
+                        <div class="photo-info">
+
+                            <span class="photo-number">09</span>
+
+                            <h3>
+                                Our Students
+                            </h3>
+
+                            <p>
+                                Future Skills
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PHOTO 10 -->
+                    <article class="gallery-card">
+
+                        <div class="photo-box">
+
+                            <img
+                                src="image/gallery-10.jpg"
+                                alt="CM Computer Centre Event"
+                                loading="lazy"
+                            >
+
+                            <div class="photo-overlay">
+                                <span>View Photo</span>
+                            </div>
+
+                        </div>
+
+                        <div class="photo-info">
+
+                            <span class="photo-number">10</span>
+
+                            <h3>
+                                Special Event
+                            </h3>
+
+                            <p>
+                                CM Computer Centre
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <button class="slider-btn next-btn" id="officeNext">
+                    &#10095;
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             TEACHER'S DAY
+        ========================== -->
+        <section class="gallery-section event-section">
+
+            <div class="section-heading reveal">
+
+                <span class="section-tag">
+                    👨‍🏫 SPECIAL EVENT
+                </span>
+
+                <h2>
+                    Teacher's <span>Day</span>
+                </h2>
+
+                <p>
+                    Celebrating our teachers who inspire us
+                    to learn, grow and achieve.
+                </p>
+
+            </div>
+
+
+            <!-- 10 PHOTOS -->
+            <div class="photo-slider-wrapper reveal">
+
+                <button class="slider-btn prev-btn" id="teacherPrev">
+                    &#10094;
+                </button>
+
+                <div class="photo-slider" id="teacherSlider">
+
+
+                    <article class="gallery-card">
+
+                        <div class="photo-box">
+                            <img src="image/gallery-11.jpg"
+                                alt="Teacher's Day"
+                                loading="lazy">
+
+                            <div class="photo-overlay">
+                                <span>View Photo</span>
+                            </div>
+                        </div>
+
+                        <div class="photo-info">
+                            <span class="photo-number">01</span>
+                            <h3>Teacher's Day</h3>
+                            <p>A Special Celebration</p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="gallery-card">
+
+                        <div class="photo-box">
+                            <img src="image/gallery-12.jpg"
+                                alt="Teacher's Day Celebration"
+                                loading="lazy">
+
+                            <div class="photo-overlay">
+                                <span>View Photo</span>
+                            </div>
+                        </div>
+
+                        <div class="photo-info">
+                            <span class="photo-number">02</span>
+                            <h3>Teacher's Day Celebration</h3>
+                            <p>Respect & Gratitude</p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="gallery-card">
+
+                        <div class="photo-box">
+                            <img src="image/gallery-13.jpg"
+                                alt="Teachers and Students"
+                                loading="lazy">
+
+                            <div class="photo-overlay">
+                                <span>View Photo</span>
+                            </div>
+                        </div>
+
+                        <div class="photo-info">
+                            <span class="photo-number">03</span>
+                            <h3>Teachers & Students</h3>
+                            <p>Learning Together</p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="gallery-card">
+
+                        <div class="photo-box">
+                            <img src="image/gallery-14.jpg"
+                                alt="Teacher's Day Moment"
+                                loading="lazy">
+
+                            <div class="photo-overlay">
+                                <span>View Photo</span>
+                            </div>
+                        </div>
+
+                        <div class="photo-info">
+                            <span class="photo-number">04</span>
+                            <h3>Special Moment</h3>
+                            <p>Beautiful Memories</p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="gallery-card">
+
+                        <div class="photo-box">
+                            <img src="image/gallery-15.jpg"
+                                alt="Teacher's Day Event"
+                                loading="lazy">
+
+                            <div class="photo-overlay">
+                                <span>View Photo</span>
+                            </div>
+                        </div>
+
+                        <div class="photo-info">
+                            <span class="photo-number">05</span>
+                            <h3>Teacher's Day Event</h3>
+                            <p>Celebrating Our Mentors</p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="gallery-card">
+
+                        <div class="photo-box">
+                            <img src="image/gallery-16.jpg"
+                                alt="Teachers"
+                                loading="lazy">
+
+                            <div class="photo-overlay">
+                                <span>View Photo</span>
+                            </div>
+                        </div>
+
+                        <div class="photo-info">
+                            <span class="photo-number">06</span>
+                            <h3>Our Mentors</h3>
+                            <p>Guidance & Inspiration</p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="gallery-card">
+
+                        <div class="photo-box">
+                            <img src="image/gallery-17.jpg"
+                                alt="Teacher's Day Memory"
+                                loading="lazy">
+
+                            <div class="photo-overlay">
+                                <span>View Photo</span>
+                            </div>
+                        </div>
+
+                        <div class="photo-info">
+                            <span class="photo-number">07</span>
+                            <h3>Beautiful Memory</h3>
+                            <p>Teacher's Day</p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="gallery-card">
+
+                        <div class="photo-box">
+                            <img src="image/gallery-18.jpg"
+                                alt="Teacher's Day Students"
+                                loading="lazy">
+
+                            <div class="photo-overlay">
+                                <span>View Photo</span>
+                            </div>
+                        </div>
+
+                        <div class="photo-info">
+                            <span class="photo-number">08</span>
+                            <h3>Happy Students</h3>
+                            <p>A Day to Remember</p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="gallery-card">
+
+                        <div class="photo-box">
+                            <img src="image/gallery-19.jpg"
+                                alt="Teacher's Day Celebration"
+                                loading="lazy">
+
+                            <div class="photo-overlay">
+                                <span>View Photo</span>
+                            </div>
+                        </div>
+
+                        <div class="photo-info">
+                            <span class="photo-number">09</span>
+                            <h3>Celebration</h3>
+                            <p>With Our Teachers</p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="gallery-card">
+
+                        <div class="photo-box">
+                            <img src="image/gallery-20.jpg"
+                                alt="Teacher's Day"
+                                loading="lazy">
+
+                            <div class="photo-overlay">
+                                <span>View Photo</span>
+                            </div>
+                        </div>
+
+                        <div class="photo-info">
+                            <span class="photo-number">10</span>
+                            <h3>Forever Memories</h3>
+                            <p>Teacher's Day</p>
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <button class="slider-btn next-btn" id="teacherNext">
+                    &#10095;
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             15 AUGUST
+        ========================== -->
+        <section class="gallery-section independence-section">
+
+            <div class="section-heading reveal">
+
+                <span class="section-tag">
+                    🇮🇳 SPECIAL DAY
+                </span>
+
+                <h2>
+                    15 <span>August</span>
+                </h2>
+
+                <p>
+                    Celebrating the spirit of freedom,
+                    unity and our beautiful nation.
+                </p>
+
+            </div>
+
+
+            <!-- 6 PHOTOS -->
+            <div class="photo-slider-wrapper reveal">
+
+                <button class="slider-btn prev-btn" id="augustPrev">
+                    &#10094;
+                </button>
+
+                <div class="photo-slider" id="augustSlider">
+
+
+                    <article class="gallery-card">
+
+                        <div class="photo-box">
+                            <img src="image/gallery-21.jpg"
+                                alt="15 August Celebration"
+                                loading="lazy">
+
+                            <div class="photo-overlay">
+                                <span>View Photo</span>
+                            </div>
+                        </div>
+
+                        <div class="photo-info">
+                            <span class="photo-number">01</span>
+                            <h3>15 August</h3>
+                            <p>Independence Day</p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="gallery-card">
+
+                        <div class="photo-box">
+                            <img src="image/gallery-22.jpg"
+                                alt="Independence Day"
+                                loading="lazy">
+
+                            <div class="photo-overlay">
+                                <span>View Photo</span>
+                            </div>
+                        </div>
+
+                        <div class="photo-info">
+                            <span class="photo-number">02</span>
+                            <h3>Independence Day</h3>
+                            <p>Celebrating Freedom</p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="gallery-card">
+
+                        <div class="photo-box">
+                            <img src="image/gallery-23.jpg"
+                                alt="15 August Event"
+                                loading="lazy">
+
+                            <div class="photo-overlay">
+                                <span>View Photo</span>
+                            </div>
+                        </div>
+
+                        <div class="photo-info">
+                            <span class="photo-number">03</span>
+                            <h3>Special Event</h3>
+                            <p>15 August Celebration</p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="gallery-card">
+
+                        <div class="photo-box">
+                            <img src="image/gallery-24.jpg"
+                                alt="Flag Celebration"
+                                loading="lazy">
+
+                            <div class="photo-overlay">
+                                <span>View Photo</span>
+                            </div>
+                        </div>
+
+                        <div class="photo-info">
+                            <span class="photo-number">04</span>
+                            <h3>Our Tricolour</h3>
+                            <p>Pride of India</p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="gallery-card">
+
+                        <div class="photo-box">
+                            <img src="image/gallery-25.jpg"
+                                alt="Independence Day Event"
+                                loading="lazy">
+
+                            <div class="photo-overlay">
+                                <span>View Photo</span>
+                            </div>
+                        </div>
+
+                        <div class="photo-info">
+                            <span class="photo-number">05</span>
+                            <h3>Celebration</h3>
+                            <p>Unity & Pride</p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="gallery-card">
+
+                        <div class="photo-box">
+                            <img src="image/gallery-26.jpg"
+                                alt="15 August Memory"
+                                loading="lazy">
+
+                            <div class="photo-overlay">
+                                <span>View Photo</span>
+                            </div>
+                        </div>
+
+                        <div class="photo-info">
+                            <span class="photo-number">06</span>
+                            <h3>Forever Memory</h3>
+                            <p>15 August</p>
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <button class="slider-btn next-btn" id="augustNext">
+                    &#10095;
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CONTACT CTA
+        ========================== -->
+        <section class="gallery-contact reveal">
+
+            <div class="contact-glow"></div>
+
+            <div class="contact-content">
+
+                <span class="contact-tag">
+                    ✨ HAVE A QUESTION?
+                </span>
+
+                <h2>
+                    Want to know more about
+                    <span>CM Computer Centre?</span>
+                </h2>
+
+                <p>
+                    Get in touch with us and learn more about
+                    our courses, admission and computer training.
+                </p>
+
+                <a href="contact.html" class="contact-btn">
+                    Contact Us
+                    <span>→</span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="gallery-footer">
+
+        <div class="footer-line"></div>
+
+        <div class="footer-content">
+
+            <div class="footer-logo">
+
+                <div class="footer-logo-circle">
+                    <img src="image/logo.png" alt="CM Computer Centre">
+                </div>
+
+                <h3>
+                    CM COMPUTER CENTRE
+                </h3>
+
+            </div>
+
+
+            <p>
+                Empowering Students With Digital Skills,
+                Knowledge & Technology.
+            </p>
+
+
+            <div class="footer-copy">
+
+                © <span id="currentYear"></span>
+                CM COMPUTER CENTRE.
+                All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================
+         TOP BUTTON
+    ========================== -->
+    <button
+        class="top-button"
+        id="topButton"
+        aria-label="Back to Top">
+
+        ↑
+
+    </button>
+
+
+
+    <!-- =========================
+         IMAGE LIGHTBOX
+    ========================== -->
+    <div class="lightbox" id="lightbox">
+
+        <button
+            class="lightbox-close"
+            id="lightboxClose"
+            aria-label="Close">
+
+            ×
+
+        </button>
+
+
+        <button
+            class="lightbox-prev"
+            id="lightboxPrev"
+            aria-label="Previous">
+
+            &#10094;
+
+        </button>
+
+
+        <div class="lightbox-content">
+
+            <img
+                id="lightboxImage"
+                src=""
+                alt="Gallery Preview"
+            >
+
+            <div class="lightbox-caption">
+
+                <h3 id="lightboxTitle">
+                    Gallery Photo
+                </h3>
+
+                <p id="lightboxText">
+                    CM Computer Centre
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <button
+            class="lightbox-next"
+            id="lightboxNext"
+            aria-label="Next">
+
+            &#10095;
+
+        </button>
+
+    </div>
+
+
+
+    <!-- =========================
+         GALLERY JS
+    ========================== -->
+    <script src="gallery.js"></script>
+
+</body>
+
+</html>

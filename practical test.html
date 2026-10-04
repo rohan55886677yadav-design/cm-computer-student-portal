@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Practical Test | CM Computer Centre</title>
+
+    <link rel="stylesheet" href="practical test.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     PAGE LOADER
+===================================================== -->
+<div class="page-loader" id="pageLoader">
+    <div class="loader-box">
+        <div class="loader-ring"></div>
+        <h3>CM COMPUTER CENTRE</h3>
+        <p>Preparing Practical Test...</p>
+    </div>
+</div>
+
+
+<!-- =====================================================
+     BACKGROUND
+===================================================== -->
+<div class="bg-grid"></div>
+
+<div class="glow glow-one"></div>
+<div class="glow glow-two"></div>
+<div class="glow glow-three"></div>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+<header class="test-header">
+
+    <div class="header-inner">
+
+        <a href="dashboard.html" class="brand">
+
+            <div class="brand-logo">
+                <img src="image/logo.png"
+                     alt="CM Computer Centre">
+            </div>
+
+            <div class="brand-text">
+                <strong>CM COMPUTER CENTRE</strong>
+                <span>PRACTICAL TEST CENTER</span>
+            </div>
+
+        </a>
+
+
+        <div class="header-status">
+
+            <span class="status-dot"></span>
+
+            <span>
+                PRACTICAL TEST
+            </span>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+<main class="practical-container">
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+<section class="exam-hero">
+
+    <div class="hero-badge">
+        💻 LIVE PRACTICAL EXAM
+    </div>
+
+    <h1>
+        Practical
+        <span>Test</span>
+    </h1>
+
+    <p>
+        Perform your practical tasks carefully and submit
+        your actual work for evaluation.
+    </p>
+
+</section>
+
+
+
+<!-- =====================================================
+     STUDENT INFORMATION
+===================================================== -->
+<section class="student-section">
+
+    <div class="section-heading">
+
+        <span class="heading-icon">
+            👨‍🎓
+        </span>
+
+        <div>
+            <h2>Student Information</h2>
+            <p>Verified examination candidate</p>
+        </div>
+
+    </div>
+
+
+    <div class="student-card">
+
+        <div class="student-photo-box"
+             id="studentPhoto">
+
+            <div class="photo-placeholder">
+                👤
+            </div>
+
+        </div>
+
+
+        <div class="student-details">
+
+            <div class="student-name-block">
+
+                <span>STUDENT NAME</span>
+
+                <h2 id="studentName">
+                    Loading...
+                </h2>
+
+            </div>
+
+
+            <div class="student-info-grid">
+
+                <div class="student-info-item">
+
+                    <span>STUDENT ID</span>
+
+                    <strong id="studentId">
+                        ---
+                    </strong>
+
+                </div>
+
+
+                <div class="student-info-item">
+
+                    <span>COURSE</span>
+
+                    <strong id="studentCourse">
+                        ---
+                    </strong>
+
+                </div>
+
+
+                <div class="student-info-item">
+
+                    <span>TEST TYPE</span>
+
+                    <strong>
+                        PRACTICAL
+                    </strong>
+
+                </div>
+
+
+                <div class="student-info-item">
+
+                    <span>STATUS</span>
+
+                    <strong class="online-status">
+                        <i></i>
+                        ONLINE
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     EXAM INFORMATION
+===================================================== -->
+<section class="exam-info-panel">
+
+    <div class="info-card">
+
+        <div class="info-icon">
+            📋
+        </div>
+
+        <span>TOTAL TASKS</span>
+
+        <strong id="totalTasks">
+            10
+        </strong>
+
+    </div>
+
+
+    <div class="info-card">
+
+        <div class="info-icon">
+            🎯
+        </div>
+
+        <span>TOTAL MARKS</span>
+
+        <strong id="totalMarks">
+            100
+        </strong>
+
+    </div>
+
+
+    <div class="info-card">
+
+        <div class="info-icon">
+            ✅
+        </div>
+
+        <span>PASS MARKS</span>
+
+        <strong>
+            40%
+        </strong>
+
+    </div>
+
+
+    <div class="info-card timer-card">
+
+        <div class="info-icon">
+            ⏱️
+        </div>
+
+        <span>TIME LEFT</span>
+
+        <strong id="examTimer">
+            60:00
+        </strong>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     IMPORTANT NOTICE
+===================================================== -->
+<section class="warning-box">
+
+    <div class="warning-icon">
+        ⚠️
+    </div>
+
+    <div class="warning-content">
+
+        <h3>
+            Important Examination Instructions
+        </h3>
+
+        <p>
+            Complete the practical task using the provided
+            workspace. Marks are based on the actual work
+            submitted. Simply marking a task as completed
+            will not automatically give full marks.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PRACTICAL WORKSPACE
+===================================================== -->
+<section class="workspace-section">
+
+
+    <!-- ================================================
+         TOOLBAR
+    ================================================= -->
+    <div class="workspace-toolbar">
+
+        <div class="toolbar-left">
+
+            <button type="button"
+                    class="tool-btn"
+                    data-command="undo"
+                    title="Undo">
+                ↶
+            </button>
+
+            <button type="button"
+                    class="tool-btn"
+                    data-command="redo"
+                    title="Redo">
+                ↷
+            </button>
+
+            <span class="toolbar-divider"></span>
+
+
+            <button type="button"
+                    class="tool-btn"
+                    data-command="bold"
+                    title="Bold">
+                <b>B</b>
+            </button>
+
+            <button type="button"
+                    class="tool-btn"
+                    data-command="italic"
+                    title="Italic">
+                <i>I</i>
+            </button>
+
+            <button type="button"
+                    class="tool-btn"
+                    data-command="underline"
+                    title="Underline">
+                <u>U</u>
+            </button>
+
+
+            <span class="toolbar-divider"></span>
+
+
+            <button type="button"
+                    class="tool-btn"
+                    data-command="left"
+                    title="Align Left">
+                ≡
+            </button>
+
+            <button type="button"
+                    class="tool-btn"
+                    data-command="center"
+                    title="Centre">
+                ☰
+            </button>
+
+            <button type="button"
+                    class="tool-btn"
+                    data-command="right"
+                    title="Align Right">
+                ≡
+            </button>
+
+
+            <span class="toolbar-divider"></span>
+
+
+            <label class="color-tool"
+                   title="Text Colour">
+
+                <span>
+                    A
+                </span>
+
+                <input type="color"
+                       id="textColor"
+                       value="#111111">
+
+            </label>
+
+
+            <label class="color-tool"
+                   title="Background Colour">
+
+                <span>
+                    🎨
+                </span>
+
+                <input type="color"
+                       id="backgroundColor"
+                       value="#ffffff">
+
+            </label>
+
+        </div>
+
+
+        <div class="toolbar-right">
+
+            <span id="workspaceMode">
+                PRACTICAL WORKSPACE
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ================================================
+         WORKSPACE BODY
+    ================================================= -->
+    <div class="workspace-body">
+
+
+        <!-- ============================================
+             TASK PANEL
+        ============================================= -->
+        <aside class="task-panel">
+
+            <div class="task-panel-header">
+
+                <span>
+                    CURRENT TASK
+                </span>
+
+                <strong id="currentTaskNumber">
+                    1 / 10
+                </strong>
+
+            </div>
+
+
+            <div class="task-content">
+
+                <div class="task-badge">
+                    TASK 01
+                </div>
+
+
+                <h2 id="taskTitle">
+                    Practical Task
+                </h2>
+
+
+                <p id="taskDescription">
+                    Your practical task will appear here.
+                </p>
+
+
+                <div class="task-instructions">
+
+                    <h3>
+                        Instructions
+                    </h3>
+
+                    <ul id="taskInstructions">
+
+                        <li>
+                            Read the task carefully.
+                        </li>
+
+                        <li>
+                            Perform the required work.
+                        </li>
+
+                        <li>
+                            Check your work before submitting.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="task-details">
+
+                    <div>
+                        <span>Marks</span>
+                        <strong id="taskMarks">
+                            10
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>Software</span>
+                        <strong id="taskSoftware">
+                            MS Office
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <label class="task-complete">
+
+                    <input type="checkbox"
+                           id="taskCompleted">
+
+                    <span>
+                        I have completed this task
+                    </span>
+
+                </label>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- ============================================
+             SOFTWARE WORKSPACE
+        ============================================= -->
+        <div class="software-workspace">
+
+
+            <!-- ========================================
+                 SOFTWARE HEADER
+            ========================================= -->
+            <div class="software-header">
+
+                <div class="software-title">
+
+                    <span class="software-icon"
+                          id="softwareIcon">
+                        📄
+                    </span>
+
+                    <div>
+
+                        <strong id="softwareName">
+                            MS Word Practice
+                        </strong>
+
+                        <small>
+                            Practical Workspace
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="save-status">
+
+                    <span class="save-dot"></span>
+
+                    <span id="saveStatus">
+                        Ready
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ========================================
+                 WORD / EDITOR WORKSPACE
+            ========================================= -->
+            <div class="editor-workspace"
+                 id="wordWorkspace">
+
+                <div class="editor-topbar">
+
+                    <select id="fontFamily">
+
+                        <option value="Arial">
+                            Arial
+                        </option>
+
+                        <option value="Calibri">
+                            Calibri
+                        </option>
+
+                        <option value="Times New Roman">
+                            Times New Roman
+                        </option>
+
+                        <option value="Georgia">
+                            Georgia
+                        </option>
+
+                    </select>
+
+
+                    <select id="fontSize">
+
+                        <option value="12">
+                            12
+                        </option>
+
+                        <option value="14">
+                            14
+                        </option>
+
+                        <option value="16">
+                            16
+                        </option>
+
+                        <option value="18">
+                            18
+                        </option>
+
+                        <option value="20">
+                            20
+                        </option>
+
+                        <option value="24">
+                            24
+                        </option>
+
+                        <option value="28">
+                            28
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="document-page">
+
+                    <div class="document-editor"
+                         id="documentEditor"
+                         contenteditable="true"
+                         spellcheck="true">
+
+                        <h2>
+                            Practical Work Area
+                        </h2>
+
+                        <p>
+                            Start your practical task here...
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ========================================
+                 EXCEL WORKSPACE
+            ========================================= -->
+            <div class="excel-workspace"
+                 id="excelWorkspace"
+                 hidden>
+
+                <div class="sheet-toolbar">
+
+                    <button type="button"
+                            id="addRowBtn">
+                        + Row
+                    </button>
+
+                    <button type="button"
+                            id="addColumnBtn">
+                        + Column
+                    </button>
+
+                    <span>
+                        Formula:
+                    </span>
+
+                    <input type="text"
+                           id="formulaBar"
+                           placeholder="Enter formula or value">
+
+                </div>
+
+
+                <div class="spreadsheet-wrap">
+
+                    <table class="spreadsheet"
+                           id="spreadsheet">
+
+                        <tbody>
+
+                            <tr>
+
+                                <th></th>
+
+                                <th>A</th>
+                                <th>B</th>
+                                <th>C</th>
+                                <th>D</th>
+                                <th>E</th>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <th>1</th>
+
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <th>2</th>
+
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <th>3</th>
+
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <th>4</th>
+
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <th>5</th>
+
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+                                <td contenteditable="true"></td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <div class="sheet-tabs">
+
+                    <button class="sheet-tab active">
+                        Sheet 1
+                    </button>
+
+                    <button class="sheet-tab">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ========================================
+                 WEB DESIGNING CODE EDITOR
+            ========================================= -->
+            <div class="code-workspace"
+                 id="codeWorkspace"
+                 hidden>
+
+                <div class="code-editor-panel">
+
+                    <div class="code-tab">
+                        HTML
+                    </div>
+
+                    <textarea id="htmlCode"
+                              spellcheck="false"
+                              placeholder="Write HTML code here..."></textarea>
+
+                </div>
+
+
+                <div class="code-editor-panel">
+
+                    <div class="code-tab">
+                        CSS
+                    </div>
+
+                    <textarea id="cssCode"
+                              spellcheck="false"
+                              placeholder="Write CSS code here..."></textarea>
+
+                </div>
+
+
+                <div class="live-preview">
+
+                    <div class="preview-header">
+                        LIVE PREVIEW
+                    </div>
+
+                    <iframe id="livePreview"
+                            title="Live Preview">
+                    </iframe>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ================================================
+         TASK NAVIGATION
+    ================================================= -->
+    <div class="task-navigation">
+
+        <button type="button"
+                id="previousTaskBtn"
+                class="nav-task-btn">
+
+            ← Previous
+
+        </button>
+
+
+        <div class="task-progress">
+
+            <span id="taskProgressText">
+                Task 1 of 10
+            </span>
+
+            <div class="task-progress-track">
+
+                <div class="task-progress-fill"
+                     id="taskProgressFill">
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <button type="button"
+                id="resetTaskBtn"
+                class="nav-task-btn">
+
+            ↻ Reset
+
+        </button>
+
+
+        <button type="button"
+                id="nextTaskBtn"
+                class="nav-task-btn primary">
+
+            Next →
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SUBMIT PANEL
+===================================================== -->
+<section class="submit-panel">
+
+    <div class="submit-info">
+
+        <div class="submit-icon">
+            🚀
+        </div>
+
+        <div>
+
+            <h3>
+                Ready to Submit?
+            </h3>
+
+            <p>
+                Check every practical task carefully before
+                submitting your examination.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <button type="button"
+            id="submitPracticalBtn"
+            class="submit-practical-btn">
+
+        <span>
+            SUBMIT PRACTICAL TEST
+        </span>
+
+        <strong>
+            →
+        </strong>
+
+    </button>
+
+</section>
+
+
+
+<!-- =====================================================
+     RESULT MESSAGE
+===================================================== -->
+<div id="testMessage"
+     class="test-message">
+</div>
+
+
+
+<!-- =====================================================
+     PROCESS
+===================================================== -->
+<section class="process-section">
+
+    <div class="section-heading">
+
+        <span class="heading-icon">
+            ⚡
+        </span>
+
+        <div>
+
+            <h2>
+                Examination Process
+            </h2>
+
+            <p>
+                Your practical test journey
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="process-grid">
+
+        <div class="process-card">
+
+            <span>01</span>
+
+            <h3>
+                Read Task
+            </h3>
+
+            <p>
+                Carefully read the instructions.
+            </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+            <span>02</span>
+
+            <h3>
+                Perform Work
+            </h3>
+
+            <p>
+                Complete the actual practical task.
+            </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+            <span>03</span>
+
+            <h3>
+                Submit
+            </h3>
+
+            <p>
+                Submit your completed work.
+            </p>
+
+        </div>
+
+
+        <div class="process-card">
+
+            <span>04</span>
+
+            <h3>
+                Result
+            </h3>
+
+            <p>
+                Marks and PASS/FAIL are generated.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+<footer class="main-footer">
+
+    <div class="footer-content">
+
+        <div class="footer-brand">
+
+            <img src="image/logo.png"
+                 alt="CM Computer Centre">
+
+            <div>
+
+                <strong>
+                    CM COMPUTER CENTRE
+                </strong>
+
+                <span>
+                    Practical Examination System
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <p>
+            © <span id="currentYear"></span>
+            CM Computer Centre. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+<script src="practical test.js"></script>
+
+</body>
+</html>

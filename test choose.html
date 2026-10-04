@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Test Choose | CM Computer Centre</title>
+
+<link rel="stylesheet" href="test choose.css">
+</head>
+
+<body>
+
+<!-- ================= PAGE LOADER ================= -->
+
+<div class="page-loader" id="pageLoader">
+    <div class="loader-ring"></div>
+    <div class="loader-brand">CM COMPUTER CENTRE</div>
+    <span>Preparing Test Center...</span>
+</div>
+
+
+<!-- ================= BACKGROUND ================= -->
+
+<div class="bg-grid"></div>
+
+<div class="glow glow-one"></div>
+<div class="glow glow-two"></div>
+<div class="glow glow-three"></div>
+
+
+<!-- ================= HEADER ================= -->
+
+<header class="test-header">
+
+    <div class="header-brand">
+
+        <div class="brand-logo">
+            <img src="image/logo.png" alt="CM Computer Centre">
+        </div>
+
+        <div class="brand-text">
+            <strong>CM COMPUTER CENTRE</strong>
+            <span>ONLINE EXAMINATION SYSTEM</span>
+        </div>
+
+    </div>
+
+
+    <div class="header-status">
+        <span class="status-dot"></span>
+        TEST CENTER ONLINE
+    </div>
+
+</header>
+
+
+<!-- ================= MAIN ================= -->
+
+<main class="test-container">
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="choose-hero">
+
+        <div class="hero-badge">
+            ⚡ TEST CENTER
+        </div>
+
+        <h1>
+            Choose Your
+            <span>Examination</span>
+        </h1>
+
+        <p>
+            Select your course and choose the available Theory
+            or Practical examination.
+        </p>
+
+    </section>
+
+
+    <!-- ================= STUDENT INFO ================= -->
+
+    <section class="student-card">
+
+        <div class="student-avatar">
+
+            <img
+                id="studentPhoto"
+                src="image/logo.png"
+                alt="Student Photo"
+            >
+
+            <span>VERIFIED</span>
+
+        </div>
+
+
+        <div class="student-info">
+
+            <div class="student-item">
+
+                <small>STUDENT NAME</small>
+
+                <strong id="studentName">
+                    Loading...
+                </strong>
+
+            </div>
+
+
+            <div class="student-item">
+
+                <small>STUDENT ID</small>
+
+                <strong id="studentId">
+                    ---
+                </strong>
+
+            </div>
+
+
+            <div class="student-item">
+
+                <small>SELECTED COURSE</small>
+
+                <strong id="selectedCourseDisplay">
+                    Select Course
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= STEP INDICATOR ================= -->
+
+    <section class="steps-section">
+
+        <div class="step active" id="stepCourse">
+
+            <span>01</span>
+
+            <div>
+                <strong>Select Course</strong>
+                <small>Choose your course</small>
+            </div>
+
+        </div>
+
+
+        <div class="step-line"></div>
+
+
+        <div class="step" id="stepModule">
+
+            <span>02</span>
+
+            <div>
+                <strong>Select Module</strong>
+                <small>Choose examination module</small>
+            </div>
+
+        </div>
+
+
+        <div class="step-line"></div>
+
+
+        <div class="step" id="stepTest">
+
+            <span>03</span>
+
+            <div>
+                <strong>Select Test</strong>
+                <small>Theory / Practical</small>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= COURSE SECTION ================= -->
+
+    <section class="selection-section" id="courseSection">
+
+        <div class="section-heading">
+
+            <span>STEP 01</span>
+
+            <h2>Select Your Course</h2>
+
+            <p>
+                Choose the course for which you want to appear
+                in the examination.
+            </p>
+
+        </div>
+
+
+        <div class="course-grid">
+
+
+            <!-- O LEVEL -->
+
+            <button
+                type="button"
+                class="course-card o-level"
+                data-course="O Level"
+            >
+
+                <div class="course-icon">
+                    💻
+                </div>
+
+                <div class="course-content">
+
+                    <span class="course-code">
+                        COMPUTER COURSE
+                    </span>
+
+                    <h3>O Level</h3>
+
+                    <p>
+                        M1-R5 • M2-R5 • M3-R5 • M4-R5
+                    </p>
+
+                </div>
+
+                <div class="course-arrow">
+                    →
+                </div>
+
+            </button>
+
+
+            <!-- ADCA -->
+
+            <button
+                type="button"
+                class="course-card"
+                data-course="ADCA"
+            >
+
+                <div class="course-icon">
+                    🎓
+                </div>
+
+                <div class="course-content">
+
+                    <span class="course-code">
+                        ADVANCED COURSE
+                    </span>
+
+                    <h3>ADCA</h3>
+
+                    <p>
+                        Advanced Diploma in Computer Applications
+                    </p>
+
+                </div>
+
+                <div class="course-arrow">
+                    →
+                </div>
+
+            </button>
+
+
+            <!-- CCC -->
+
+            <button
+                type="button"
+                class="course-card"
+                data-course="CCC"
+            >
+
+                <div class="course-icon">
+                    🖥️
+                </div>
+
+                <div class="course-content">
+
+                    <span class="course-code">
+                        CERTIFICATE COURSE
+                    </span>
+
+                    <h3>CCC</h3>
+
+                    <p>
+                        Course on Computer Concepts
+                    </p>
+
+                </div>
+
+                <div class="course-arrow">
+                    →
+                </div>
+
+            </button>
+
+
+            <!-- TALLY -->
+
+            <button
+                type="button"
+                class="course-card"
+                data-course="Tally"
+            >
+
+                <div class="course-icon">
+                    📊
+                </div>
+
+                <div class="course-content">
+
+                    <span class="course-code">
+                        ACCOUNTING COURSE
+                    </span>
+
+                    <h3>Tally</h3>
+
+                    <p>
+                        Computerized Accounting
+                    </p>
+
+                </div>
+
+                <div class="course-arrow">
+                    →
+                </div>
+
+            </button>
+
+
+            <!-- DCA -->
+
+            <button
+                type="button"
+                class="course-card"
+                data-course="DCA"
+            >
+
+                <div class="course-icon">
+                    🧑‍💻
+                </div>
+
+                <div class="course-content">
+
+                    <span class="course-code">
+                        COMPUTER APPLICATION
+                    </span>
+
+                    <h3>DCA</h3>
+
+                    <p>
+                        Diploma in Computer Applications
+                    </p>
+
+                </div>
+
+                <div class="course-arrow">
+                    →
+                </div>
+
+            </button>
+
+
+            <!-- PGDCA -->
+
+            <button
+                type="button"
+                class="course-card"
+                data-course="PGDCA"
+            >
+
+                <div class="course-icon">
+                    🚀
+                </div>
+
+                <div class="course-content">
+
+                    <span class="course-code">
+                        PROFESSIONAL COURSE
+                    </span>
+
+                    <h3>PGDCA</h3>
+
+                    <p>
+                        Post Graduate Diploma in Computer Applications
+                    </p>
+
+                </div>
+
+                <div class="course-arrow">
+                    →
+                </div>
+
+            </button>
+
+
+            <!-- WEB DESIGNING -->
+
+            <button
+                type="button"
+                class="course-card"
+                data-course="Web Designing"
+            >
+
+                <div class="course-icon">
+                    🌐
+                </div>
+
+                <div class="course-content">
+
+                    <span class="course-code">
+                        DEVELOPMENT COURSE
+                    </span>
+
+                    <h3>Web Designing</h3>
+
+                    <p>
+                        HTML • CSS • JavaScript • Web Development
+                    </p>
+
+                </div>
+
+                <div class="course-arrow">
+                    →
+                </div>
+
+            </button>
+
+
+            <!-- MS OFFICE -->
+
+            <button
+                type="button"
+                class="course-card"
+                data-course="MS Office"
+            >
+
+                <div class="course-icon">
+                    📁
+                </div>
+
+                <div class="course-content">
+
+                    <span class="course-code">
+                        OFFICE COURSE
+                    </span>
+
+                    <h3>MS Office</h3>
+
+                    <p>
+                        Word • Excel • PowerPoint
+                    </p>
+
+                </div>
+
+                <div class="course-arrow">
+                    →
+                </div>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MODULE SECTION ================= -->
+
+    <section
+        class="selection-section hidden"
+        id="moduleSection"
+    >
+
+        <div class="section-heading">
+
+            <span>STEP 02</span>
+
+            <h2 id="moduleHeading">
+                Select Module
+            </h2>
+
+            <p id="moduleDescription">
+                Select the examination module.
+            </p>
+
+        </div>
+
+
+        <!-- O LEVEL MODULES -->
+
+        <div
+            class="module-grid"
+            id="oLevelModules"
+        >
+
+            <button
+                type="button"
+                class="module-card"
+                data-module="M1-R5"
+            >
+
+                <div class="module-number">
+                    M1
+                </div>
+
+                <div>
+
+                    <span>MODULE</span>
+
+                    <h3>M1-R5</h3>
+
+                    <p>
+                        Information Technology Tools
+                        & Network Basics
+                    </p>
+
+                </div>
+
+                <strong>→</strong>
+
+            </button>
+
+
+            <button
+                type="button"
+                class="module-card"
+                data-module="M2-R5"
+            >
+
+                <div class="module-number">
+                    M2
+                </div>
+
+                <div>
+
+                    <span>MODULE</span>
+
+                    <h3>M2-R5</h3>
+
+                    <p>
+                        Web Designing & Publishing
+                    </p>
+
+                </div>
+
+                <strong>→</strong>
+
+            </button>
+
+
+            <button
+                type="button"
+                class="module-card"
+                data-module="M3-R5"
+            >
+
+                <div class="module-number">
+                    M3
+                </div>
+
+                <div>
+
+                    <span>MODULE</span>
+
+                    <h3>M3-R5</h3>
+
+                    <p>
+                        Programming & Problem Solving
+                    </p>
+
+                </div>
+
+                <strong>→</strong>
+
+            </button>
+
+
+            <button
+                type="button"
+                class="module-card"
+                data-module="M4-R5"
+            >
+
+                <div class="module-number">
+                    M4
+                </div>
+
+                <div>
+
+                    <span>MODULE</span>
+
+                    <h3>M4-R5</h3>
+
+                    <p>
+                        Internet of Things & Applications
+                    </p>
+
+                </div>
+
+                <strong>→</strong>
+
+            </button>
+
+        </div>
+
+
+        <!-- OTHER COURSE MODULE -->
+
+        <div
+            class="single-module hidden"
+            id="singleModule"
+        >
+
+            <div class="single-module-icon">
+                📘
+            </div>
+
+            <div>
+
+                <span>COURSE EXAMINATION</span>
+
+                <h3 id="singleModuleTitle">
+                    Theory Examination
+                </h3>
+
+                <p id="singleModuleDescription">
+                    Your course theory examination is available.
+                </p>
+
+            </div>
+
+            <div class="module-check">
+                ✓
+            </div>
+
+        </div>
+
+
+        <button
+            type="button"
+            class="back-selection-btn"
+            id="backCourseBtn"
+        >
+            ← Change Course
+        </button>
+
+    </section>
+
+
+    <!-- ================= TEST TYPE SECTION ================= -->
+
+    <section
+        class="selection-section hidden"
+        id="testSection"
+    >
+
+        <div class="section-heading">
+
+            <span>STEP 03</span>
+
+            <h2>Select Examination</h2>
+
+            <p id="testHeadingDescription">
+                Choose the examination you want to attempt.
+            </p>
+
+        </div>
+
+
+        <!-- SELECTED EXAM INFO -->
+
+        <div class="selected-exam-card">
+
+            <div>
+
+                <span>SELECTED</span>
+
+                <strong id="selectedExamCourse">
+                    O Level
+                </strong>
+
+            </div>
+
+            <div class="exam-separator"></div>
+
+            <div>
+
+                <span>MODULE</span>
+
+                <strong id="selectedExamModule">
+                    M1-R5
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- TEST TYPE GRID -->
+
+        <div class="test-type-grid">
+
+
+            <!-- THEORY -->
+
+            <button
+                type="button"
+                class="test-type-card theory-card"
+                id="theoryTestBtn"
+            >
+
+                <div class="test-type-icon">
+                    📘
+                </div>
+
+                <div class="test-type-content">
+
+                    <span>ONLINE EXAMINATION</span>
+
+                    <h3>Theory Test</h3>
+
+                    <p id="theoryDescription">
+                        Attempt objective questions
+                        based on your selected course/module.
+                    </p>
+
+                    <div class="test-meta">
+
+                        <span>
+                            📝 Questions
+                        </span>
+
+                        <span>
+                            ⏱ Timed
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="test-start">
+                    Start →
+                </div>
+
+            </button>
+
+
+            <!-- PRACTICAL -->
+
+            <button
+                type="button"
+                class="test-type-card practical-card"
+                id="practicalTestBtn"
+            >
+
+                <div class="test-type-icon">
+                    💻
+                </div>
+
+                <div class="test-type-content">
+
+                    <span>PRACTICAL EXAMINATION</span>
+
+                    <h3>Practical Test</h3>
+
+                    <p id="practicalDescription">
+                        Complete practical tasks
+                        in the examination workspace.
+                    </p>
+
+                    <div class="test-meta">
+
+                        <span>
+                            🛠 Tasks
+                        </span>
+
+                        <span>
+                            ⏱ Timed
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="test-start">
+                    Start →
+                </div>
+
+            </button>
+
+        </div>
+
+
+        <div class="test-note" id="testNote">
+
+            <span>🔐</span>
+
+            <p>
+                Your examination and result are linked with
+                your Student ID.
+            </p>
+
+        </div>
+
+
+        <button
+            type="button"
+            class="back-selection-btn"
+            id="backModuleBtn"
+        >
+            ← Change Module
+        </button>
+
+    </section>
+
+
+    <!-- ================= RULES ================= -->
+
+    <section class="rules-card">
+
+        <div class="rules-icon">
+            🛡️
+        </div>
+
+        <div>
+
+            <strong>Examination Information</strong>
+
+            <p>
+                Select only the examination assigned to your
+                course. Your test result will be saved against
+                your Student ID.
+            </p>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="test-footer">
+
+    <div>
+
+        <strong>
+            CM COMPUTER CENTRE
+        </strong>
+
+        <span>
+            Digital Learning • Computer Education • Skill Development
+        </span>
+
+    </div>
+
+    <p>
+        © <span id="currentYear"></span>
+        CM Computer Centre. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="test choose.js"></script>
+
+</body>
+</html>

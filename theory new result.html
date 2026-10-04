@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Theory Result | CM Computer Centre</title>
+
+    <link rel="stylesheet" href="theory new result.css">
+
+</head>
+
+<body>
+
+<!-- =========================================================
+     PAGE LOADER
+========================================================= -->
+
+<div class="page-loader" id="pageLoader">
+
+    <div class="loader-ring"></div>
+
+    <div class="loader-brand">
+        CM COMPUTER CENTRE
+    </div>
+
+    <span>
+        Generating Theory Result...
+    </span>
+
+</div>
+
+
+<!-- =========================================================
+     BACKGROUND
+========================================================= -->
+
+<div class="bg-grid"></div>
+
+<div class="glow glow-one"></div>
+<div class="glow glow-two"></div>
+<div class="glow glow-three"></div>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="result-header">
+
+    <div class="header-left">
+
+        <div class="brand-logo">
+
+            <img
+                src="image/logo.png"
+                alt="CM Computer Centre"
+            >
+
+        </div>
+
+        <div class="brand-text">
+
+            <strong>
+                CM COMPUTER CENTRE
+            </strong>
+
+            <span>
+                THEORY EXAMINATION SYSTEM
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="result-status">
+
+        <span class="status-dot"></span>
+
+        RESULT GENERATED
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================================
+     MAIN
+========================================================= -->
+
+<main class="result-container">
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="result-hero">
+
+    <div class="hero-badge">
+
+        ✓ THEORY EXAMINATION RESULT
+
+    </div>
+
+    <h1>
+        Theory Test Result
+    </h1>
+
+    <p>
+        Your examination result has been successfully generated.
+    </p>
+
+</section>
+
+
+
+<!-- =========================================================
+     STUDENT PROFILE
+========================================================= -->
+
+<section class="student-card">
+
+    <div class="student-photo-box">
+
+        <img
+            id="studentPhoto"
+            src="image/logo.png"
+            alt="Student Photo"
+        >
+
+        <span class="photo-verified">
+            VERIFIED
+        </span>
+
+    </div>
+
+
+    <div class="student-details">
+
+        <div class="student-detail">
+
+            <span>
+                STUDENT NAME
+            </span>
+
+            <strong id="studentName">
+                Loading...
+            </strong>
+
+        </div>
+
+
+        <div class="student-detail">
+
+            <span>
+                STUDENT ID
+            </span>
+
+            <strong id="studentId">
+                ---
+            </strong>
+
+        </div>
+
+
+        <div class="student-detail">
+
+            <span>
+                COURSE
+            </span>
+
+            <strong id="studentCourse">
+                ---
+            </strong>
+
+        </div>
+
+
+        <div class="student-detail">
+
+            <span>
+                MODULE
+            </span>
+
+            <strong id="studentModule">
+                ---
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     RESULT STATUS
+========================================================= -->
+
+<section
+    class="result-status-box"
+    id="resultStatusBox"
+>
+
+    <div
+        class="result-icon"
+        id="resultIcon"
+    >
+        ✓
+    </div>
+
+
+    <div class="result-status-content">
+
+        <span id="resultLabel">
+            EXAMINATION STATUS
+        </span>
+
+        <h2 id="resultStatus">
+            PASS
+        </h2>
+
+        <p id="resultMessage">
+            Your theory examination result is being prepared.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     SCORE SUMMARY
+========================================================= -->
+
+<section class="score-section">
+
+    <div class="section-heading">
+
+        <span>
+            PERFORMANCE
+        </span>
+
+        <h2>
+            Examination Score
+        </h2>
+
+        <p>
+            Detailed performance of your theory examination.
+        </p>
+
+    </div>
+
+
+    <div class="score-grid">
+
+
+        <!-- TOTAL -->
+
+        <div class="score-card">
+
+            <div class="score-card-icon">
+                📋
+            </div>
+
+            <span>
+                TOTAL QUESTIONS
+            </span>
+
+            <strong id="totalQuestions">
+                100
+            </strong>
+
+        </div>
+
+
+
+        <!-- CORRECT -->
+
+        <div class="score-card correct-card">
+
+            <div class="score-card-icon">
+                ✓
+            </div>
+
+            <span>
+                CORRECT ANSWERS
+            </span>
+
+            <strong id="correctAnswers">
+                0
+            </strong>
+
+        </div>
+
+
+
+        <!-- WRONG -->
+
+        <div class="score-card wrong-card">
+
+            <div class="score-card-icon">
+                ✕
+            </div>
+
+            <span>
+                WRONG ANSWERS
+            </span>
+
+            <strong id="wrongAnswers">
+                0
+            </strong>
+
+        </div>
+
+
+
+        <!-- UNANSWERED -->
+
+        <div class="score-card unanswered-card">
+
+            <div class="score-card-icon">
+                ?
+            </div>
+
+            <span>
+                UNANSWERED
+            </span>
+
+            <strong id="unanswered">
+                0
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FINAL SCORE
+========================================================= -->
+
+<section class="final-score-card">
+
+    <div class="final-score-left">
+
+        <span>
+            YOUR SCORE
+        </span>
+
+        <div class="score-number">
+
+            <strong id="score">
+                0
+            </strong>
+
+            <small>
+                / 100
+            </small>
+
+        </div>
+
+        <p>
+            Total marks obtained in Theory Examination
+        </p>
+
+    </div>
+
+
+    <div class="percentage-box">
+
+        <span>
+            PERCENTAGE
+        </span>
+
+        <strong id="percentage">
+            0%
+        </strong>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     SCORE PROGRESS
+========================================================= -->
+
+<section class="progress-card">
+
+    <div class="progress-top">
+
+        <div>
+
+            <span>
+                RESULT PROGRESS
+            </span>
+
+            <strong>
+                Performance
+            </strong>
+
+        </div>
+
+        <strong id="progressPercentage">
+            0%
+        </strong>
+
+    </div>
+
+
+    <div class="progress-track">
+
+        <div
+            class="progress-fill"
+            id="scoreProgress"
+            style="width:0%"
+        ></div>
+
+    </div>
+
+
+    <div class="progress-labels">
+
+        <span>
+            0%
+        </span>
+
+        <span>
+            PASS MARKS: 40%
+        </span>
+
+        <span>
+            100%
+        </span>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     EXAM INFORMATION
+========================================================= -->
+
+<section class="exam-info-section">
+
+    <div class="info-card">
+
+        <span>
+            EXAM TYPE
+        </span>
+
+        <strong>
+            THEORY TEST
+        </strong>
+
+    </div>
+
+
+    <div class="info-card">
+
+        <span>
+            EXAM DATE
+        </span>
+
+        <strong id="examDate">
+            ---
+        </strong>
+
+    </div>
+
+
+    <div class="info-card">
+
+        <span>
+            PASS CRITERIA
+        </span>
+
+        <strong>
+            40%
+        </strong>
+
+    </div>
+
+
+    <div class="info-card">
+
+        <span>
+            TOTAL MARKS
+        </span>
+
+        <strong>
+            100
+        </strong>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FINAL NOTICE
+========================================================= -->
+
+<section
+    class="final-notice"
+    id="finalNotice"
+>
+
+    <div class="notice-icon">
+        🎓
+    </div>
+
+
+    <div class="notice-content">
+
+        <span>
+            IMPORTANT NOTICE
+        </span>
+
+        <h2 id="noticeTitle">
+            Theory Result
+        </h2>
+
+        <p id="noticeText">
+            Please wait while your result is being processed.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     ACTION SECTION
+========================================================= -->
+
+<section class="action-section">
+
+    <div class="action-heading">
+
+        <span>
+            NEXT STEP
+        </span>
+
+        <h2>
+            Continue Your Examination
+        </h2>
+
+        <p>
+            Select the next action according to your result.
+        </p>
+
+    </div>
+
+
+    <div class="action-buttons">
+
+
+        <!-- =================================================
+             PRACTICAL YES
+        ================================================== -->
+
+        <button
+            type="button"
+            class="action-btn practical-btn"
+            id="practicalYesBtn"
+        >
+
+            <span class="action-icon">
+                💻
+            </span>
+
+            <span class="action-text">
+
+                <strong>
+                    YES, START PRACTICAL
+                </strong>
+
+                <small>
+                    Continue to Practical Examination
+                </small>
+
+            </span>
+
+            <span class="action-arrow">
+                →
+            </span>
+
+        </button>
+
+
+
+        <!-- =================================================
+             PRACTICAL NO
+        ================================================== -->
+
+        <button
+            type="button"
+            class="action-btn back-btn"
+            id="practicalNoBtn"
+        >
+
+            <span class="action-icon">
+                ←
+            </span>
+
+            <span class="action-text">
+
+                <strong>
+                    NO, GO BACK
+                </strong>
+
+                <small>
+                    Return to Test Center
+                </small>
+
+            </span>
+
+        </button>
+
+
+
+        <!-- =================================================
+             HOME / DASHBOARD
+        ================================================== -->
+
+        <a
+            href="dashboard.html"
+            class="action-btn home-btn"
+        >
+
+            <span class="action-icon">
+                🏠
+            </span>
+
+            <span class="action-text">
+
+                <strong>
+                    HOME / DASHBOARD
+                </strong>
+
+                <small>
+                    Return to Student Dashboard
+                </small>
+
+            </span>
+
+            <span class="action-arrow">
+                →
+            </span>
+
+        </a>
+
+
+
+        <!-- =================================================
+             RETRY THEORY
+        ================================================== -->
+
+        <button
+            type="button"
+            class="action-btn retry-btn"
+            id="retryTheoryBtn"
+        >
+
+            <span class="action-icon">
+                ↻
+            </span>
+
+            <span class="action-text">
+
+                <strong>
+                    RETRY THEORY TEST
+                </strong>
+
+                <small>
+                    Attempt the Theory Test again
+                </small>
+
+            </span>
+
+            <span class="action-arrow">
+                →
+            </span>
+
+        </button>
+
+    </div>
+
+
+    <div
+        class="action-message"
+        id="actionMessage"
+    ></div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FINAL RESULT INFORMATION
+========================================================= -->
+
+<section class="future-result-card">
+
+    <div class="future-icon">
+        🏆
+    </div>
+
+
+    <div class="future-content">
+
+        <span>
+            FINAL RESULT
+        </span>
+
+        <h2>
+            Theory + Practical
+        </h2>
+
+        <p>
+            After successfully completing the required
+            Theory and Practical examinations, your combined
+            Final Result will be generated.
+        </p>
+
+    </div>
+
+
+    <div class="future-badge">
+        FUTURE STEP
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     SECURITY
+========================================================= -->
+
+<section class="security-panel">
+
+    <div class="security-icon">
+        🔒
+    </div>
+
+
+    <div>
+
+        <strong>
+            Examination Security
+        </strong>
+
+        <p>
+            Your result is linked with your Student ID,
+            Course and Module information.
+        </p>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="result-footer">
+
+    <div class="footer-brand">
+
+        <strong>
+            CM COMPUTER CENTRE
+        </strong>
+
+        <span>
+            Digital Learning • Computer Education • Skill Development
+        </span>
+
+    </div>
+
+
+    <p>
+
+        ©
+
+        <span id="currentYear"></span>
+
+        CM Computer Centre.
+
+        All Rights Reserved.
+
+    </p>
+
+</footer>
+
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script src="theory new result.js"></script>
+
+</body>
+
+</html>

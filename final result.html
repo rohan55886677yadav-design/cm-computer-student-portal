@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Final Result | CM Computer Centre</title>
+
+<link rel="stylesheet" href="final resul.css">
+</head>
+
+<body>
+
+<!-- ================= PAGE LOADER ================= -->
+<div class="page-loader" id="pageLoader">
+    <div class="loader-ring"></div>
+    <div class="loader-text">CM COMPUTER CENTRE</div>
+    <span>Generating Final Result...</span>
+</div>
+
+
+<!-- ================= BACKGROUND ================= -->
+<div class="bg-grid"></div>
+
+<div class="glow glow-one"></div>
+<div class="glow glow-two"></div>
+<div class="glow glow-three"></div>
+
+
+<!-- ================= HEADER ================= -->
+<header class="result-header">
+
+    <div class="header-left">
+
+        <div class="brand-logo">
+            <img src="image/logo.png" alt="CM Computer Centre">
+        </div>
+
+        <div class="brand-text">
+            <strong>CM COMPUTER CENTRE</strong>
+            <span>FINAL EXAMINATION RESULT SYSTEM</span>
+        </div>
+
+    </div>
+
+
+    <div class="result-live">
+        <span class="live-dot"></span>
+        RESULT GENERATED
+    </div>
+
+</header>
+
+
+
+<!-- ================= MAIN ================= -->
+<main class="final-container">
+
+
+    <!-- ================= HERO ================= -->
+    <section class="result-hero">
+
+        <div class="hero-badge">
+            🏆 FINAL RESULT
+        </div>
+
+        <h1>Final Examination Result</h1>
+
+        <p>
+            Your Theory and Practical examination performance
+            has been combined into your final result.
+        </p>
+
+    </section>
+
+
+
+    <!-- ================= STUDENT PROFILE ================= -->
+    <section class="student-panel">
+
+        <div class="student-photo-box">
+
+            <img
+                id="studentPhoto"
+                src="image/logo.png"
+                alt="Student Photo"
+            >
+
+            <span class="photo-status">
+                VERIFIED
+            </span>
+
+        </div>
+
+
+        <div class="student-details">
+
+            <div class="student-detail">
+                <span>STUDENT NAME</span>
+                <strong id="studentName">Loading...</strong>
+            </div>
+
+            <div class="student-detail">
+                <span>STUDENT ID</span>
+                <strong id="studentId">---</strong>
+            </div>
+
+            <div class="student-detail">
+                <span>COURSE</span>
+                <strong id="studentCourse">---</strong>
+            </div>
+
+            <div class="student-detail">
+                <span>EXAMINATION</span>
+                <strong>FINAL EXAM</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FINAL STATUS ================= -->
+    <section class="final-status-panel" id="finalStatusPanel">
+
+        <div class="final-result-icon" id="finalResultIcon">
+            🏆
+        </div>
+
+        <div class="final-status-content">
+
+            <span class="status-small">
+                FINAL RESULT
+            </span>
+
+            <h2 id="finalResultLabel">
+                CALCULATING...
+            </h2>
+
+            <strong id="finalResultStatus">
+                PLEASE WAIT
+            </strong>
+
+            <p id="finalResultMessage">
+                Your final examination result is being generated.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= SCORE SUMMARY ================= -->
+    <section class="score-section">
+
+        <div class="section-heading">
+
+            <span>EXAMINATION SUMMARY</span>
+
+            <h2>Performance Report</h2>
+
+        </div>
+
+
+        <div class="score-grid">
+
+
+            <!-- THEORY -->
+            <div class="score-card theory-card">
+
+                <div class="score-icon">
+                    📘
+                </div>
+
+                <span>THEORY TEST</span>
+
+                <strong id="theoryScore">
+                    0 / 20
+                </strong>
+
+                <small id="theoryPercentage">
+                    0%
+                </small>
+
+                <div class="score-bar">
+                    <div
+                        id="theoryProgress"
+                        class="score-progress"
+                    ></div>
+                </div>
+
+                <p id="theoryStatus">
+                    Result Pending
+                </p>
+
+            </div>
+
+
+
+            <!-- PRACTICAL -->
+            <div class="score-card practical-card">
+
+                <div class="score-icon">
+                    💻
+                </div>
+
+                <span>PRACTICAL TEST</span>
+
+                <strong id="practicalScore">
+                    0 / 3
+                </strong>
+
+                <small id="practicalPercentage">
+                    0%
+                </small>
+
+                <div class="score-bar">
+                    <div
+                        id="practicalProgress"
+                        class="score-progress"
+                    ></div>
+                </div>
+
+                <p id="practicalStatus">
+                    Result Pending
+                </p>
+
+            </div>
+
+
+
+            <!-- OVERALL -->
+            <div class="score-card overall-card">
+
+                <div class="score-icon">
+                    🏆
+                </div>
+
+                <span>OVERALL SCORE</span>
+
+                <strong id="overallScore">
+                    0%
+                </strong>
+
+                <small>
+                    Combined Performance
+                </small>
+
+                <div class="score-bar">
+                    <div
+                        id="overallProgress"
+                        class="score-progress"
+                    ></div>
+                </div>
+
+                <p id="overallStatus">
+                    Calculating...
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= DETAILED RESULT ================= -->
+    <section class="details-section">
+
+        <div class="section-heading">
+
+            <span>DETAILED RESULT</span>
+
+            <h2>Examination Performance</h2>
+
+        </div>
+
+
+        <div class="details-grid">
+
+
+            <div class="detail-result-card">
+
+                <span>THEORY CORRECT</span>
+
+                <strong id="theoryCorrect">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="detail-result-card">
+
+                <span>THEORY WRONG</span>
+
+                <strong id="theoryWrong">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="detail-result-card">
+
+                <span>THEORY UNANSWERED</span>
+
+                <strong id="theoryUnanswered">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="detail-result-card">
+
+                <span>PRACTICAL COMPLETED</span>
+
+                <strong id="practicalCompleted">
+                    0 / 3
+                </strong>
+
+            </div>
+
+
+            <div class="detail-result-card">
+
+                <span>FINAL PERCENTAGE</span>
+
+                <strong id="finalPercentage">
+                    0%
+                </strong>
+
+            </div>
+
+
+            <div class="detail-result-card">
+
+                <span>RESULT</span>
+
+                <strong id="finalResultMini">
+                    ---
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= RESULT NOTICE ================= -->
+    <section class="final-notice" id="finalNotice">
+
+        <div class="notice-icon" id="noticeIcon">
+            🎓
+        </div>
+
+        <div class="notice-content">
+
+            <span>OFFICIAL RESULT NOTICE</span>
+
+            <h2 id="noticeTitle">
+                Final Result
+            </h2>
+
+            <p id="noticeText">
+                Your final examination result will appear here.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CERTIFICATE INFO ================= -->
+    <section class="certificate-panel">
+
+        <div class="certificate-icon">
+            📜
+        </div>
+
+        <div>
+
+            <span>CERTIFICATE STATUS</span>
+
+            <h2 id="certificateStatus">
+                Awaiting Final Result
+            </h2>
+
+            <p id="certificateMessage">
+                Certificate eligibility will be determined
+                according to the final examination result.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= ACTIONS ================= -->
+    <section class="result-actions">
+
+        <button
+            type="button"
+            class="result-action-btn"
+            id="backHomeBtn"
+        >
+            🏠 Back to Home
+        </button>
+
+
+        <button
+            type="button"
+            class="result-action-btn secondary"
+            id="dashboardBtn"
+        >
+            📊 Student Dashboard
+        </button>
+
+    </section>
+
+
+
+    <!-- ================= SECURITY ================= -->
+    <section class="security-panel">
+
+        <span class="security-icon">
+            🔒
+        </span>
+
+        <div>
+
+            <strong>
+                Examination Security
+            </strong>
+
+            <p>
+                This result is linked with your Student ID.
+                Your Theory and Practical examination records
+                are maintained separately and combined only
+                for the final result.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="result-footer">
+
+    <div>
+
+        <strong>
+            CM COMPUTER CENTRE
+        </strong>
+
+        <span>
+            Digital Learning • Computer Education • Skill Development
+        </span>
+
+    </div>
+
+
+    <p>
+        © <span id="currentYear"></span>
+        CM Computer Centre.
+        All Rights Reserved.
+    </p>
+
+</footer>
+
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="final result.js"></script>
+
+</body>
+</html>
